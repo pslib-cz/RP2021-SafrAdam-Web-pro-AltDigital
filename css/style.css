@@ -1,0 +1,189 @@
+:root {
+    --black: #242423;
+    --light-grey: #3c3c3c;
+    --grey: #676767;
+    --dark: #242423;
+    --white: #fffffa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    color: var(--white);
+    transition: 0.6s;
+}
+
+header.sticky {
+    background-color: var(--dark);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+header .brand {
+    font-size: 40px;
+}
+
+header .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header .menu a {
+    display: block;
+    font-size: 18px;
+    margin: 20px;
+    padding: 0 15px;
+    border-radius: 20px;
+    color: var(--white);
+    transition: 0.5s;
+}
+
+header .button {
+    display: block;
+    color: var(--white);
+    font-size: 29px;
+    cursor: pointer;
+}
+
+header .menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    transition: 0.5s;
+    transition-property: right;
+}
+
+header .menu.active {
+    right: 0;
+    position: fixed;
+    background-color: var(--dark);
+}
+
+header .icon-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+}
+
+header .rightNav {
+    display: flex;
+    align-items: center;
+}
+
+header .rightNav a {
+    margin-right: 20px;
+}
+
+.podheader {
+    background-image: url("../img/HeaderPictureDarker.jpg");
+    background-position: center;
+    color: var(--white);
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 360px;
+    left: 25px;
+}
+
+.title p:first-child {
+    font-size: 63px;
+    align-items: center;
+}
+
+.title .nadpis {
+    margin-left: 0.5em;
+}
+
+
+
+@media (min-width: 768px) {
+    .podheader {
+        min-height: 50vh;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    header {
+        padding: 10px 75px;
+    }
+
+    header .menu {
+        position: relative;
+        top: unset;
+        right: unset;
+        min-width: unset;
+        height: unset;
+    }
+
+    header .menu ul {
+        flex-direction: row;
+        text-align: unset;
+    }
+
+    header ul li {
+        list-style: none;
+        margin: 0 5px;
+    }
+
+    header .brand {
+        font-size: 45px;
+    }
+
+    header .button {
+        display: none;
+    }
+
+    header .menu a {
+        margin: 0px 18px;
+        padding: 5px 20px;
+        font-size: 21px;
+    }
+
+    header .menu a:hover {
+        border-radius: 20px;
+        background-color: var(--white);
+        color: var(--dark);
+    }
+
+}
