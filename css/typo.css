@@ -3,11 +3,6 @@
     src: url("../fonts/Monaco.ttf") format("ttf");
 }
 
-@font-face {
-    font-family: "Trebuchet";
-    src: url("../fonts/Trebuchet_MS.ttf") format("ttf"); 
-}
-
 body {
     font-family: "Monaco", sans-serif;
     font-size: 1rem;
@@ -15,7 +10,10 @@ body {
 }
 
 h2, h3, h4 {
-    font-family: "Trebuchet", sans-serif;
+    font-family: "Monaco", sans-serif;
+    margin-bottom: 15px;
+    color: var(--dark);
+    font-weight: normal;
 }
 
 h1 {
