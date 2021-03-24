@@ -124,6 +124,10 @@ header .rightNav a {
     left: 25px;
 }
 
+.title p {
+    color: inherit;
+}
+
 .title p:first-child {
     font-size: 63px;
     align-items: center;
@@ -135,13 +139,6 @@ header .rightNav a {
 
 main {
     padding: 15px 25px;
-}
-
-p {
-    margin-bottom: 1.2em;
-    text-align: left;
-    font-size: 16px;
-    color: var(--light-grey);
 }
 
 h2 {
