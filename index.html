@@ -55,53 +55,56 @@
 
         <section class="services" id="Services">
             <h2>Služby</h2>
-            <div class="gallery">
-                <div class="images">
+            <div class="images">
                     <figure>
                         <a href="#">
                             <img src="./img/Services/data_comunication.jpg" alt="komunikační data">
                         
-                            <figcaption>komunikační aplikace</figcaption>
+                            <figcaption>Komunikační aplikace</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="#">
                             <img src="./img/Services/hardware_design.jpg" alt="komunikační data">
                        
-                        <figcaption>komunikační aplikace</figcaption>
+                        <figcaption>Hardware design</figcaption>
                     </a>
                     </figure>
                     <figure>
                         <a href="#">
                             <img src="./img/Services/mobile_app.jpg" alt="komunikační data">
                         
-                        <figcaption>komunikační aplikace</figcaption>
+                        <figcaption>Mobilní aplikace</figcaption>
                     </a>
                     </figure>
                     <figure>
                         <a href="#">
                             <img src="./img/Services/tech_home.jpg" alt="komunikační data">
                         
-                        <figcaption>komunikační aplikace</figcaption>
+                        <figcaption>Chytrý domov</figcaption>
                     </a>
                     </figure>
                     <figure>
                         <a href="#">
                             <img src="./img/Services/linux.jpg" alt="komunikační data">
                        
-                        <figcaption>komunikační aplikace</figcaption>
+                        <figcaption>Linux servery</figcaption>
                     </a>
                     </figure>
-                </div>
-
-            </div>
+               </div>
         </section>
 
         <section class="products" id="Products">
             <h2>Naše produkty</h2>
-            <p>
-                Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je vybavený základní přepěťovou ochranou.
-            </p>
+            <div>
+                <p>
+                    Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je vybavený základní přepěťovou ochranou.
+                </p>
+                <a href="#">
+                    <img src="./img/modul.png">
+                    <figcaption>JA-190X Modul telefonního komunikátoru</figcaption>
+                </a>
+            </div>
         </section>
 
         <section class="partners">
@@ -133,10 +136,10 @@
         </div>
         <div class="footer-navigation">
             <ul class="navigation">
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
+                <li><a href="#">Kariéra</a></li>
+                <li><a href="#">Kontakty</a></li>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Produkty</a></li>
             </ul>
         </div>
     </footer>
@@ -160,12 +163,13 @@
         var CloseButton = document.querySelector(".icon-close");
         menuButton.addEventListener("click", () => {
             menu.classList.add("active");
+            header.classList.add("background");
         });
         CloseButton.addEventListener("click", () => {
             menu.classList.remove("active");
+            header.classList.remove("background");
         }); 
-        
-        //dodělat --- přidat šedý efekt na .brand
+
     </script>
 
 </body>
