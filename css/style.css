@@ -79,19 +79,20 @@ header .menu {
     right: -100%;
     transition: 0.5s;
     transition-property: right;
+    background-color: var(--dark);
 }
 
 header .menu.active {
     right: 0;
     position: fixed;
-    background-color: var(--dark);
 }
 
 header .icon-close {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 25px;
+    top: 10px;
+    right: 25px;
+    margin: 20px;
+    cursor: pointer;
 }
 
 header .rightNav {
@@ -160,6 +161,63 @@ h2 {
 }
 
 
+.sponzors-gallery img {
+    max-width: 220px;
+}
+
+.sponzors-gallery a {
+    width: 220px;
+    height: 100%;
+    display: block;
+    margin: 1.5em auto;
+}
+
+.sponzors-gallery h2, .products h2 {
+    margin: 15px 0;
+}
+
+
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 25px;
+    font-size: 17px;
+}
+
+.footer-items ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.footer-items a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .icon {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+}
+
+footer .footer-navigation {
+    display: none;
+}
+
+.footer-copy {
+    padding: 0;
+    background-color: var(--light-grey);
+}
+
+.footer-copy p {
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+    font-size: 14px;
+    padding: 0.2em;
+}
+
 
 @media (min-width: 768px) {
     .podheader {
@@ -178,7 +236,6 @@ h2 {
     main {
         padding: 15px 75px;
     }
-
 
 }
 
