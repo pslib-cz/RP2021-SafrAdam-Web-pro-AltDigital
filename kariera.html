@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>altdigital</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/typo.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="brand">&#8706;</a>
+        <div class="menu">
+            <div class="button"><span class="icon-close"></span></div>
+
+            <ul>
+                <li><a href="./index.html/#About">O nás</a></li>
+                <li><a href="index.html/#Services">Služby</a></li>
+                <li><a href="index.html/#Products">Produkty</a></li>
+                <li><a href="#Contacts">Kontakty</a></li>
+                <li><a href="#">Kariéra</a></li>
+            </ul>
+        </div>
+
+        <div class="rightNav">
+            <a href="#" class="lang">EN</a>
+            <div class="button"><span class="icon-menu"></span></div>
+        </div>   
+    </header>
+
+    <section class="podheader">
+        <div class="title">
+            <p>&#8706;</p>
+            <span class="nadpis">
+                <h1>alt digital</h1>
+                <p>electronics design house</p>
+            </span>
+        </div>
+    </section>
+
+    <main>
+        <section class="paragraph" id="About">
+            <h2>Kariéra</h2>
+            <p>Nabízíme nadstandardní pracovní prostředí, moderní pracovní vybavení, skvělý kolektiv, dobré platové ohodnocení, práci na opravdu zajímavých projektech a plně hrazené stravenky, placený mobilní tarif. V případě zájmu nás neváhejte kontaktovat.</p>
+        </section>
+
+        <section class="positions">
+            <h2>Volné pozice</h2>
+            <div>
+                <div class="job">
+                    <h3>Embedded SW designer</h3>
+                    <ul>
+                        <li>znalost ANSI C</li>
+                        <li>znalost navrhování HW</li>
+                        <li>znalost tvorby modulové dokumentace</li>
+                        <li>znalost programovacích technik pro embeded systémy</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Embedded HW designer</h3>
+                    <ul>
+                        <li>znalost návrhu HW</li>
+                        <li>zájem o návrh high-speed designu</li>
+                        <li>zájem o simulace a formální metodynávrhu</li>
+                        <li>znalost nástroje Altium výhodou</li>
+                        <li>znalost nástroje SolidWorks výhodou</li>
+                        <li>znalost nástroje HyperLynx výhodou</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Uklízečka</h3>
+                    <ul>
+                        <li>znalost ANSI C</li>
+                        <li>znalost navrhování HW</li>
+                        <li>znalost tvorby modulové dokumentace</li>
+                        <li>znalost programovacích technik pro embeded systémy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Fotogalerie našich kanceláří</h2>
+            <div class="gallery">
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="Contacts">
+        <div class="footer-items">
+            <ul>
+                <li><a><span class="icon-location icon"></span>Smolný vrch 410/3, 460 01 Liberec</a></li>
+                <li><a href="tel:+420 776 691 343"><span class="icon-phone icon"></span>+420 776 691 343</a></li>
+                <li><a href="mailto:info@altd.cz"><span class="icon-envelope icon"></span>info@altd.cz</a></li>
+            </ul>
+        </div>
+        <div class="footer-navigation">
+            <ul class="navigation">
+                <li><a href="#">Kariéra</a></li>
+                <li><a href="#">Kontakty</a></li>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Produkty</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="footer-copy">
+        <p>&copy;2021 alt digital s.r.o.</p>
+    </div>
+
+
+    <script type="text/javascript">
+        //sticky function
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        //hamburgermenu function
+        var menu = document.querySelector(".menu");
+        var header = document.querySelector("header");
+        var menuButton = document.querySelector(".icon-menu");
+        var CloseButton = document.querySelector(".icon-close");
+        menuButton.addEventListener("click", () => {
+            menu.classList.add("active");
+            header.classList.add("background");
+        });
+        CloseButton.addEventListener("click", () => {
+            menu.classList.remove("active");
+            header.classList.remove("background");
+        }); 
+
+    </script>
+
+</body>
+
+</html>

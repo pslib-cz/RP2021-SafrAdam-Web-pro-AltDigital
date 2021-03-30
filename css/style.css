@@ -63,9 +63,9 @@ header ul li {
 
 header .menu a {
     display: block;
-    font-size: 18px;
-    margin: 20px;
-    padding: 0 15px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
     border-radius: 20px;
     color: var(--white);
     transition: 0.5s;
@@ -163,6 +163,12 @@ h2 {
     padding-right: 0.3em;
 }
 
+h3 {
+    border-bottom: 2px solid var(--grey);
+    display: inline-block;
+    width: fit-content;
+}
+
 .images {
     display: flex;
     flex-direction: row;
@@ -171,7 +177,7 @@ h2 {
 } 
 
 .images figure {
-    margin-right: 3em;
+    margin-right: 5em;
 }
 
 .images figure * {
@@ -201,13 +207,14 @@ h2 {
 
 .products img {
     width: 320px;
+    transform: rotateZ(90deg);
 }
 
 .products a {
     display: block;
     max-width: 375px;
     text-align: center;
-    margin: 2em auto 5em auto;
+    margin: 0 auto
 }
 
 .products figcaption {
@@ -236,11 +243,25 @@ h2 {
     margin: 15px 0;
 }
 
+.positions > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.positions .job {
+    margin: 20px 0;
+}
+
+.job ul li {
+    padding: 0.5em 0;
+    list-style: disclosure-closed;
+    margin-left: 1.3em;
+}
 
 footer {
     background-color: var(--dark);
     color: var(--white);
-    padding: 25px;
+    padding-top: 5px;
     font-size: 17px;
     display: flex;
     gap: 4em;
@@ -263,6 +284,7 @@ footer ul li {
 footer a {
     text-decoration: none;
     color: inherit;
+    font-size: 15px;
 }
 
 footer .icon {
@@ -296,7 +318,7 @@ footer .footer-navigation {
     }
 
     header {
-        padding: 10px calc(75px/2) 10px 75px;
+        padding: 0 calc(75px/2) 0 75px;
     }
 
     .title {
@@ -319,6 +341,17 @@ footer .footer-navigation {
         gap: 1em;
     }
 
+    .positions > div {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .positions .job {
+        max-width: 380px;
+        margin-right: 4em;
+    }
+
     footer .footer-navigation {
         display: block;
     }
@@ -339,7 +372,7 @@ footer .footer-navigation {
 
 @media (min-width: 1100px) {
     header {
-        padding: 10px 75px;
+        padding: 0 75px;
     }
 
     header .menu {
@@ -362,7 +395,7 @@ footer .footer-navigation {
     }
 
     header .brand {
-        font-size: 45px;
+        font-size: 40px; 
     }
 
     header .button {
@@ -372,7 +405,7 @@ footer .footer-navigation {
     header .menu a {
         margin: 0px 18px;
         padding: 5px 20px;
-        font-size: 21px;
+        font-size: 16px;
     }
 
     header .menu a:hover {
@@ -397,18 +430,26 @@ footer .footer-navigation {
     }
 
     .products p {
-        padding: 10px 75px 10px 0;
         max-width: calc(50vw - 175px);
+        margin-top: 2em;
     }
 
     .products a {
         margin: 0;
     }
 
+    .products a:last-child {
+        margin-top: -7em;
+    }
+
     .products div {
         flex-direction: row;
         padding-right: 2em;
-        justify-content: center;
+        justify-content: left;
+    }
+
+    .positions .job {
+        max-width: 500px;
     }
 
 
@@ -421,11 +462,15 @@ footer .footer-navigation {
         margin: 0 auto;
     }
 
+    header .menu a {
+        font-size: 18px;
+    }
+
     header {
         padding-right: calc(((100vw - 12px) - 1600px)/2);
         padding-left: calc(((100vw - 12px) - 1600px)/2);
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .title {

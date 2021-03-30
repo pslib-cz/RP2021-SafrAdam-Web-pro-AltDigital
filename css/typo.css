@@ -14,10 +14,11 @@ h2, h3, h4 {
     margin-bottom: 15px;
     color: var(--dark);
     font-weight: normal;
+    width: fit-content;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin: 0 0 0.3em 0em;
     font-weight: normal;
 }
