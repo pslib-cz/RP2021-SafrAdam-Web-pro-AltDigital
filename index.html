@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>altdigital</title>
+    <title>Hlavní stránka | altdigital</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/typo.css">
     <link rel="stylesheet" href="./css/icomoon.css">
@@ -54,6 +54,19 @@
 
         <section class="services" id="Services">
             <h2>Služby</h2>
+<!--
+            <div class="flipbox">
+                <div class="flip">
+                  <div class="front">
+                    <img src="./img/Services/hardware_design.jpg" alt="Paris" style="width:220px;height:156px">
+                  </div>
+                  <div class="back">
+                    <h3>Hardware design</h3>
+                    <p>Děláme tohle a umíme tohle</p>
+                  </div>
+                </div>
+              </div>
+-->
             <div class="images">
                     <figure>
                         <a href="#">
@@ -76,12 +89,13 @@
                         <figcaption>Linux servery</figcaption>
                     </a>
                     </figure>
-               </div>
+               </div> 
         </section>
 
         <section class="products" id="Products">
             <h2>Naše produkty</h2>
-            <div>
+
+            <div class="product" id="product1">
                 <p>
                     Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je vybavený základní přepěťovou ochranou.
                 </p>
@@ -90,6 +104,55 @@
                     <figcaption>JA-190X Modul telefonního komunikátoru</figcaption>
                 </a>
             </div>
+
+            <div class="product" id="product2">
+                <p>
+                    Druhý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je vybavený základní přepěťovou ochranou.
+                </p>
+                <a href="#">
+                    <img src="./img/modul.png">
+                    <figcaption>Jiný obrázek</figcaption>
+                </a>
+            </div>
+
+            <div class="product" id="product3">
+                <p>
+                    Třetí produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je vybavený základní přepěťovou ochranou.
+                </p>
+                <a href="#">
+                    <img src="./img/modul.png">
+                    <figcaption>Ještě jiný obrázek</figcaption>
+                </a>
+            </div>
+
+            <div class="product" id="product4">
+                <p>
+                    Čtvrtý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je vybavený základní přepěťovou ochranou.
+                </p>
+                <a href="#">
+                    <img src="./img/modul.png">
+                    <figcaption>Úplně jiný obrázek</figcaption>
+                </a>
+            </div>
+
+            <div class="product" id="product5">
+                <p>
+                    Pátý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je vybavený základní přepěťovou ochranou.
+                </p>
+                <a href="#">
+                    <img src="./img/modul.png">
+                    <figcaption>Zcela jiný obrázek</figcaption>
+                </a>
+            </div>
+
+            <div class="buttons">
+                <a href="#product1"></a>
+                <a href="#product2"></a>
+                <a href="#product3"></a>
+                <a href="#product4"></a>
+                <a href="#product5"></a>
+            </div>
+
         </section>
 
         <section class="partners">
@@ -145,9 +208,9 @@
         var menu = document.querySelector(".menu");
         var header = document.querySelector("header");
         var menuButton = document.querySelector(".icon-menu");
-        var CloseButton = document.querySelector(".icon-close");
-        menuButton.addEventListener("click", () => {
-            menu.classList.add("active");
+        var CloseButton = document.querySelector("body");
+        menuButton.addEventListener("click", (event) => {
+            event.stopPropagation();menu.classList.add("active");
             header.classList.add("background");
         });
         CloseButton.addEventListener("click", () => {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>altdigital</title>
+    <title>Kariéra | altdigital</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/typo.css">
     <link rel="stylesheet" href="./css/icomoon.css">
@@ -88,6 +88,21 @@
         <section>
             <h2>Fotogalerie našich kanceláří</h2>
             <div class="gallery">
+                <a>
+                    <img src="./img/kancl1.jpg" alt="kancelář">
+                </a>
+                <a>
+                    <img src="./img/kancl2.jpg" alt="zrzka u pc">
+                </a>
+                <a>
+                    <img src="./img/kancl3.jpg" alt="kancelář">
+                </a>
+                <a>
+                    <img src="./img/kancl4.png" alt="kancelář">
+                </a>
+                <a>
+                    <img src="./img/kancl5.png" alt="kancelář">
+                </a>
             </div>
         </section>
 
@@ -127,15 +142,15 @@
         var menu = document.querySelector(".menu");
         var header = document.querySelector("header");
         var menuButton = document.querySelector(".icon-menu");
-        var CloseButton = document.querySelector(".icon-close");
-        menuButton.addEventListener("click", () => {
-            menu.classList.add("active");
+        var CloseButton = document.querySelector("body");
+        menuButton.addEventListener("click", (event) => {
+            event.stopPropagation();menu.classList.add("active");
             header.classList.add("background");
         });
         CloseButton.addEventListener("click", () => {
             menu.classList.remove("active");
             header.classList.remove("background");
-        }); 
+        });  
 
     </script>
 

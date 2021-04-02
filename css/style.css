@@ -32,6 +32,20 @@ header {
     transition: 0.2s;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg)
+    }
+}
+
+header.sticky a.brand {
+    animation: 0.5s  ease-out 0s 1 rotate;
+}
+
 header.sticky {
     background-color: var(--dark);
 }
@@ -168,6 +182,46 @@ h3 {
     display: inline-block;
     width: fit-content;
 }
+ /*****Druhá možnost
+.flipbox {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flipbox:hover .flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background-color: none;
+  }
+  
+  .back {
+    background-color: rgb(151, 151, 151);
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+
+*/
 
 .images {
     display: flex;
@@ -185,8 +239,8 @@ h3 {
 }
 
 .images img {
-    width: 175px;
-    height: 145px;
+    width: 220px;
+    height: 146px;
 }
 
 .images figure a {
@@ -194,15 +248,12 @@ h3 {
     background-color: var(--black);
 }
 
+
 .images figcaption {
     padding: 0.3em 0.5em;
     color: var(--white);
     font-size: 17px;
     text-align: center;
-}
-.products div {
-    display: flex;
-    flex-direction: column;
 }
 
 .products img {
@@ -258,6 +309,55 @@ h3 {
     margin-left: 1.3em;
 }
 
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery a {
+    display: block;
+    margin-right: 1.5em;
+    transition: 0.8s;
+}
+
+.gallery a:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.buttons {
+    display: flex;
+    max-width: 180px;
+    justify-content: space-between;
+    margin: 4em auto;
+}
+
+.buttons a {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+    background-color: var(--grey);
+}
+
+.product {
+    display: none;
+}
+
+.product:target {
+    display: block;
+}
+
+#product5 {
+    display: block;
+}
+
+.product:target ~ #product5 {
+    display: none;
+}
+
+
+
 footer {
     background-color: var(--dark);
     color: var(--white);
@@ -308,7 +408,7 @@ footer .footer-navigation {
     color: var(--white);
     text-align: center;
     font-size: 14px;
-    padding: 0.2em;
+    padding: 5px;
 }
 
 
@@ -424,32 +524,45 @@ footer .footer-navigation {
         white-space: normal;
     }
 
-    .images img {
-        width: 220px;
-        height: 146px;
+    .positions .job {
+        max-width: 500px;
     }
 
-    .products p {
-        max-width: calc(50vw - 175px);
-        margin-top: 2em;
+    .products {
+        position: relative;
     }
 
-    .products a {
-        margin: 0;
+    .buttons {
+        position: absolute;
+        left: 200px;
+        top: 200px;
     }
 
-    .products a:last-child {
+    .buttons a {
+        margin: 5px;
+        transition: 0.6s;
+    }
+
+    .buttons a:hover {
+        background-color: var(--dark);
+        border-color: var(--dark);  
+        transition: 0.4s;
+    }
+
+    #product5 {
+        display: flex;
+    }
+
+    .product:target {
+        display: flex !important;
+    }
+
+    .product a {
         margin-top: -7em;
     }
 
-    .products div {
-        flex-direction: row;
-        padding-right: 2em;
-        justify-content: left;
-    }
-
-    .positions .job {
-        max-width: 500px;
+    .products p {
+        max-width: 600px;
     }
 
 
@@ -475,6 +588,11 @@ footer .footer-navigation {
 
     .title {
         left: calc(((100vw - 12px) - 1600px)/2);
+    }
+
+    .gallery {
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 }
 
