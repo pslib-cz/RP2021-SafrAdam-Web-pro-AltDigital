@@ -31,7 +31,7 @@ header {
     color: var(--white);
     transition: 0.2s;
 }
-
+/*
 @keyframes rotate {
     0% {
         transform: rotateZ(0deg);
@@ -45,7 +45,7 @@ header {
 header.sticky a.brand {
     animation: 0.5s  ease-out 0s 1 rotate;
 }
-
+*/
 header.sticky {
     background-color: var(--dark);
 }
@@ -526,6 +526,7 @@ footer .footer-navigation {
 
     .positions .job {
         max-width: 500px;
+        margin: 0 auto;
     }
 
     .products {
