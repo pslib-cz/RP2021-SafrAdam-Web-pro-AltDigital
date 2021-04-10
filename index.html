@@ -29,7 +29,8 @@
         </div>
 
         <div class="rightNav">
-            <a href="./en.html" class="lang">EN</a>
+            <a href="./en.html" class="lang"><img src="./img/uk-flag.png" alt="vlajka anglie"></a>
+            <a href="#" class="lang"><img src="./img/cz-flag.png" alt="vlajka české republiky"></a>
             <div class="button"><span class="icon-menu"></span></div>
         </div>
     </header>
@@ -45,7 +46,7 @@
     </section>
 
     <main>
-        <section class="paragraph" id="About">
+        <section id="About">
             <h2>O nás</h2>
             <p>Firma alt digital s.r.o. se od roku 2018 zaměřuje na vývoj elektroniky a výrobky určené primárně pro
                 diagnostiku parních turbín a související energo problematiku. Jsme členem skupiny Jablotron. Jablotron
@@ -65,43 +66,47 @@
             <div class="flipboxGallery">
                 <div class="flipbox">
                     <div class="flip">
-                      <div class="front">
-                        <img src="./img/Services/hardware_design.jpg" alt="Paris" style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
-                        <span>Hardware design</span>
-                      </div>
-                      <div class="back">
-                        <h3>Hardware design</h3>
-                        <p>Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.</p>
-                      </div>
+                        <div class="front">
+                            <img src="./img/Services/hardware_design.jpg" alt="Paris"
+                                style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
+                            <span>Hardware design</span>
+                        </div>
+                        <div class="back">
+                            <h3>Hardware design</h3>
+                            <p>Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme
+                                tohle a umíme tohle.</p>
+                        </div>
                     </div>
                 </div>
-    
+
                 <div class="flipbox">
                     <div class="flip">
-                      <div class="front">
-                        <img src="./img/Services/tech_home.jpg" alt="Paris" style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
-                        <span>Software design</span>
-                      </div>
-                      <div class="back">
-                        <h3>Software design</h3>
-                        <p>Děláme tohle a umíme tohle</p>
-                      </div>
+                        <div class="front">
+                            <img src="./img/Services/tech_home.jpg" alt="Paris"
+                                style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
+                            <span>Software design</span>
+                        </div>
+                        <div class="back">
+                            <h3>Software design</h3>
+                            <p>Děláme tohle a umíme tohle</p>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="flipbox">
                     <div class="flip">
-                      <div class="front">
-                        <img src="./img/Services/hardware_design.jpg" alt="Paris" style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
-                        <span>Výroba</span>
-                      </div>
-                      <div class="back">
-                        <h3>Výroba</h3>
-                        <p>Děláme tohle a umíme tohle</p>
-                      </div>
+                        <div class="front">
+                            <img src="./img/Services/hardware_design.jpg" alt="Paris"
+                                style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
+                            <span>Výroba</span>
+                        </div>
+                        <div class="back">
+                            <h3>Výroba</h3>
+                            <p>Děláme tohle a umíme tohle</p>
+                        </div>
                     </div>
                 </div>
-                </div>
+            </div>
             </div>
         </section>
 
@@ -194,14 +199,14 @@
         var menuButton = document.querySelector(".icon-menu");
         var CloseButton = document.querySelector("body");
         menuButton.addEventListener("click", (event) => {
-            event.stopPropagation(); menu.classList.add("active");
+            event.stopPropagation();
+            menu.classList.add("active");
             header.classList.add("background");
         });
         CloseButton.addEventListener("click", () => {
             menu.classList.remove("active");
             header.classList.remove("background");
         });
-
     </script>
 
 </body>

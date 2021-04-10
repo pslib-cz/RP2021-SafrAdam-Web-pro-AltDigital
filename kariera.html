@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kariéra | altdigital</title>
+    <link rel="shortcut icon" href="./img/logo.svg">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/typo.css">
     <link rel="stylesheet" href="./css/icomoon.css">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
@@ -20,9 +20,9 @@
             <div class="button"><span class="icon-close"></span></div>
 
             <ul>
-                <li><a href="./index.html/#About">O nás</a></li>
-                <li><a href="index.html/#Services">Služby</a></li>
-                <li><a href="index.html/#Products">Produkty</a></li>
+                <li><a href="index.html">O nás</a></li>
+                <li><a href="index.html">Služby</a></li>
+                <li><a href="index.html">Produkty</a></li>
                 <li><a href="#Contacts">Kontakty</a></li>
                 <li><a href="#">Kariéra</a></li>
             </ul>
@@ -31,7 +31,7 @@
         <div class="rightNav">
             <a href="#" class="lang">EN</a>
             <div class="button"><span class="icon-menu"></span></div>
-        </div>   
+        </div>
     </header>
 
     <section class="podheader">
@@ -47,7 +47,9 @@
     <main>
         <section class="paragraph" id="About">
             <h2>Kariéra</h2>
-            <p>Nabízíme nadstandardní pracovní prostředí, moderní pracovní vybavení, skvělý kolektiv, dobré platové ohodnocení, práci na opravdu zajímavých projektech a plně hrazené stravenky, placený mobilní tarif. V případě zájmu nás neváhejte kontaktovat.</p>
+            <p>Nabízíme nadstandardní pracovní prostředí, moderní pracovní vybavení, skvělý kolektiv, dobré platové
+                ohodnocení, práci na opravdu zajímavých projektech a plně hrazené stravenky, placený mobilní tarif. V
+                případě zájmu nás neváhejte kontaktovat.</p>
         </section>
 
         <section class="positions">
@@ -119,9 +121,9 @@
         <div class="footer-navigation">
             <ul class="navigation">
                 <li><a href="#">Kariéra</a></li>
-                <li><a href="#">Kontakty</a></li>
-                <li><a href="#">O nás</a></li>
-                <li><a href="#">Produkty</a></li>
+                <li><a href="#Contacts">Kontakty</a></li>
+                <li><a href="index.html">O nás</a></li>
+                <li><a href="index.html">Produkty</a></li>
             </ul>
         </div>
     </footer>
@@ -144,14 +146,14 @@
         var menuButton = document.querySelector(".icon-menu");
         var CloseButton = document.querySelector("body");
         menuButton.addEventListener("click", (event) => {
-            event.stopPropagation();menu.classList.add("active");
+            event.stopPropagation();
+            menu.classList.add("active");
             header.classList.add("background");
         });
         CloseButton.addEventListener("click", () => {
             menu.classList.remove("active");
             header.classList.remove("background");
-        });  
-
+        });
     </script>
 
 </body>

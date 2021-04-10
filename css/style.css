@@ -171,7 +171,9 @@ h3 {
 
 .flipboxGallery {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .flipbox {
@@ -179,7 +181,7 @@ h3 {
     width: 230px;
     height: 200px;
     perspective: 1000px;
-    margin: 1em auto;
+    margin: 1em;
 }
 
 .flip {
@@ -418,8 +420,6 @@ footer .footer-navigation {
     }
 
     .flipboxGallery {
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
