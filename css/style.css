@@ -31,21 +31,7 @@ header {
     color: var(--white);
     transition: 0.2s;
 }
-/*
-@keyframes rotate {
-    0% {
-        transform: rotateZ(0deg);
-    }
 
-    100% {
-        transform: rotateZ(360deg)
-    }
-}
-
-header.sticky a.brand {
-    animation: 0.5s  ease-out 0s 1 rotate;
-}
-*/
 header.sticky {
     background-color: var(--dark);
 }
@@ -182,78 +168,70 @@ h3 {
     display: inline-block;
     width: fit-content;
 }
- /*****Druhá možnost
+
+.flipboxGallery {
+    display: flex;
+    flex-direction: column;
+}
+
 .flipbox {
     background-color: transparent;
-    width: 300px;
+    width: 230px;
     height: 200px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px;
-  }
-  
-  .flip {
+    margin: 1em auto;
+}
+
+.flip {
     position: relative;
+    display: block;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-
-  .flipbox:hover .flip {
-    transform: rotateY(180deg);
-  }
-  
-  .front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .front {
-    background-color: none;
-  }
-  
-  .back {
-    background-color: rgb(151, 151, 151);
-    transform: rotateY(180deg);
-    text-align: center;
-  }
-
-*/
-
-.images {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    row-gap: 2em;
-} 
-
-.images figure {
-    margin-right: 5em;
-}
-
-.images figure * {
+    background-color: var(--black);
     border-radius: 20px 5px;
 }
 
-.images img {
-    width: 220px;
-    height: 146px;
+.flipbox:hover .flip {
+    transform: rotateX(180deg);
 }
 
-.images figure a {
+.front,
+.back {
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    backface-visibility: hidden;
     display: block;
-    background-color: var(--black);
 }
 
+.back {
+    transform: rotateX(180deg);
+    background-color: var(--dark);
+    border-radius: 5px 20px;
+}
 
-.images figcaption {
-    padding: 0.3em 0.5em;
+.back h3 {
+    color: var(--white);
+    padding: 10px 5px 5px 5px;
+    border-bottom: 1px solid var(--white);
+    margin: 0;
+}
+
+.back p {
+    color: var(--white);
+    text-align: center;
+    padding: 0.5em;
+}
+
+.flipbox span {
     color: var(--white);
     font-size: 17px;
     text-align: center;
+    display: block;
+    margin-top: 3px;
 }
 
 .products img {
@@ -268,11 +246,12 @@ h3 {
     margin: 0 auto
 }
 
-.products figcaption {
+.products span {
     color: var(--dark);
     padding-top: 10px;
     border-top: 2px solid var(--dark);
     margin-top: 1em;
+    display: block;
 }
 
 .sponzors-gallery img {
@@ -290,11 +269,12 @@ h3 {
     margin: 1em;
 }
 
-.sponzors-gallery h2, .products h2 {
+.sponzors-gallery h2,
+.products h2 {
     margin: 15px 0;
 }
 
-.positions > div {
+.positions>div {
     display: flex;
     flex-direction: column;
 }
@@ -328,8 +308,8 @@ h3 {
 .buttons {
     display: flex;
     max-width: 180px;
-    justify-content: space-between;
-    margin: 4em auto;
+    justify-content: center;
+    margin: 3em auto;
 }
 
 .buttons a {
@@ -338,6 +318,7 @@ h3 {
     border-radius: 8px;
     border: 1px solid var(--grey);
     background-color: var(--grey);
+    margin: 1em;
 }
 
 .product {
@@ -348,15 +329,13 @@ h3 {
     display: block;
 }
 
-#product5 {
+#product2 {
     display: block;
 }
 
-.product:target ~ #product5 {
+.product:target~#product2 {
     display: none;
 }
-
-
 
 footer {
     background-color: var(--dark);
@@ -429,9 +408,19 @@ footer .footer-navigation {
     main {
         padding: 0 75px;
     }
-    
+
     main section {
         padding-top: 40px;
+    }
+
+    .flipbox {
+        margin: 1em;
+    }
+
+    .flipboxGallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .sponzors-gallery {
@@ -441,7 +430,7 @@ footer .footer-navigation {
         gap: 1em;
     }
 
-    .positions > div {
+    .positions>div {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
@@ -471,8 +460,20 @@ footer .footer-navigation {
 }
 
 @media (min-width: 1100px) {
+    main {
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
     header {
-        padding: 0 75px;
+        padding: 0px;
+        padding-right: calc(((100vw - 12px) - 800px)/2);
+        padding-left: calc(((100vw - 12px) - 800px)/2);
+    }
+
+    .title {
+        left: calc(((100vw - 12px) - 800px)/2);
     }
 
     header .menu {
@@ -495,7 +496,7 @@ footer .footer-navigation {
     }
 
     header .brand {
-        font-size: 40px; 
+        font-size: 40px;
     }
 
     header .button {
@@ -503,9 +504,8 @@ footer .footer-navigation {
     }
 
     header .menu a {
-        margin: 0px 18px;
         padding: 5px 20px;
-        font-size: 16px;
+        font-size: 17px;
     }
 
     header .menu a:hover {
@@ -520,13 +520,13 @@ footer .footer-navigation {
         justify-content: center;
     }
 
-    .images figcaption {
+    .images span {
         white-space: normal;
     }
 
     .positions .job {
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: 350px;
+        margin: 0 1em;
     }
 
     .products {
@@ -535,7 +535,7 @@ footer .footer-navigation {
 
     .buttons {
         position: absolute;
-        left: 200px;
+        left: 250px;
         top: 200px;
     }
 
@@ -546,11 +546,11 @@ footer .footer-navigation {
 
     .buttons a:hover {
         background-color: var(--dark);
-        border-color: var(--dark);  
+        border-color: var(--dark);
         transition: 0.4s;
     }
 
-    #product5 {
+    #product2 {
         display: flex;
     }
 
@@ -569,11 +569,33 @@ footer .footer-navigation {
 
 }
 
+
+@media (min-width: 1400px) {
+    main {
+        max-width: 1100px;
+    }
+
+    header {
+        padding: 0px;
+        padding-right: calc(((100vw - 12px) - 1100px)/2);
+        padding-left: calc(((100vw - 12px) - 1100px)/2);
+    }
+
+    .title {
+        left: calc(((100vw - 12px) - 1100px)/2);
+    }
+
+    .flipboxGallery {
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+}
+
 @media (min-width: 1920px) {
     main {
-        padding: 0;
-        max-width: 1600px;
-        margin: 0 auto;
+        max-width: 1400px;
     }
 
     header .menu a {
@@ -581,14 +603,16 @@ footer .footer-navigation {
     }
 
     header {
-        padding-right: calc(((100vw - 12px) - 1600px)/2);
-        padding-left: calc(((100vw - 12px) - 1600px)/2);
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-right: calc(((100vw - 12px) - 1400px)/2);
+        padding-left: calc(((100vw - 12px) - 1400px)/2);
+    }
+
+    header .menu a {
+        margin: 0px 18px;
     }
 
     .title {
-        left: calc(((100vw - 12px) - 1600px)/2);
+        left: calc(((100vw - 12px) - 1400px)/2);
     }
 
     .gallery {
@@ -599,8 +623,16 @@ footer .footer-navigation {
 
 @media (min-width: 2560px) {
     main {
-        margin: 0 auto;
+        max-width: 1600px;
     }
 
+    header {
+        padding: 0px;
+        padding-right: calc(((100vw - 12px) - 1600px)/2);
+        padding-left: calc(((100vw - 12px) - 1600px)/2);
+    }
 
+    .title {
+        left: calc(((100vw - 12px) - 1600px)/2);
+    }
 }
