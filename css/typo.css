@@ -1,10 +1,15 @@
 @font-face {
     font-family: "Monaco";
+    src: url("../fonts/Monaco.otf") format("otf");
+}
+
+@font-face {
+    font-family: "MonacoWoff";
     src: url("../fonts/Monaco.woff") format("woff");
 }
 
 body {
-    font-family: "Monaco", sans-serif;
+    font-family: "Monaco", "MonacoWoff", sans-serif;
     font-size: 1rem;
     color: var(--light-grey);
 }
@@ -24,6 +29,6 @@ h1 {
 
 p {
     margin-bottom: 1.2em;
-    text-align: left;
+    text-align: justify;
     color: var(--light-grey);
 }

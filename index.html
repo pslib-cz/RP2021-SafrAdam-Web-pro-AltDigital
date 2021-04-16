@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/typo.css">
     <link rel="stylesheet" href="./css/icomoon.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 </head>
 
 <body>
@@ -29,8 +30,9 @@
         </div>
 
         <div class="rightNav">
-            <a href="./en.html" class="lang"><img src="./img/uk-flag.png" alt="vlajka anglie"></a>
-            <a href="#" class="lang"><img src="./img/cz-flag.png" alt="vlajka české republiky"></a>
+            <a href="./en.html" class="lang"><img src="./img/UKflag.svg" alt="vlajka anglie"></a>
+            <a href="#" class="lang"><img src="./img/CZflag.svg" alt="vlajka české republiky"></a>
+            <a href="#" class="lang"><img src="./img/DEflag.svg" alt="vlajka německa"></a>
             <div class="button"><span class="icon-menu"></span></div>
         </div>
     </header>
@@ -62,12 +64,27 @@
 
         <section class="services" id="Services">
             <h2>Služby</h2>
-
+            
             <div class="flipboxGallery">
+
                 <div class="flipbox">
                     <div class="flip">
                         <div class="front">
-                            <img src="./img/Services/hardware_design.jpg" alt="Paris"
+                            <img src="./img/Services/software_design.jpg" alt="software design"
+                                style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
+                            <span>Software design</span>
+                        </div>
+                        <div class="back">
+                            <h3>Software design</h3>
+                            <p>Děláme tohle a umíme tohle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flipbox">
+                    <div class="flip">
+                        <div class="front">
+                            <img src="./img/Services/hardware_design.jpg" alt="hardware design"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Hardware design</span>
                         </div>
@@ -82,21 +99,7 @@
                 <div class="flipbox">
                     <div class="flip">
                         <div class="front">
-                            <img src="./img/Services/tech_home.jpg" alt="Paris"
-                                style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
-                            <span>Software design</span>
-                        </div>
-                        <div class="back">
-                            <h3>Software design</h3>
-                            <p>Děláme tohle a umíme tohle</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flipbox">
-                    <div class="flip">
-                        <div class="front">
-                            <img src="./img/Services/hardware_design.jpg" alt="Paris"
+                            <img src="./img/Services/pcb_manufacturing.jpg" alt="výroba desek"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Výroba</span>
                         </div>
@@ -151,13 +154,16 @@
                     <img src="./img/atrea-logo.png" alt="">
                 </a>
                 <a>
-                    <img src="./img/DellLogo.webp" alt="">
+                    <img src="./img/st-logo.svg" alt="">
+                </a>
+                <a>
+                    <img src="./img/addat_logo.png" alt="">
                 </a>
                 <a>
                     <img src="./img/jablotron-vector-logo.jpg" alt="">
                 </a>
                 <a>
-                    <img src="./img/RPIlogo.png" alt="">
+                    <img src="./img/witte_logo.png" alt="">
                 </a>
             </div>
         </section>
@@ -168,15 +174,7 @@
             <ul>
                 <li><a><span class="icon-location icon"></span>Smolný vrch 410/3, 460 01 Liberec</a></li>
                 <li><a href="tel:+420776691343"><span class="icon-phone icon"></span>+420 776 691 343</a></li>
-                <li><a href="mailto:info@altd.cz"><span class="icon-envelope icon"></span>info@altd.cz</a></li>
-            </ul>
-        </div>
-        <div class="footer-navigation">
-            <ul class="navigation">
-                <li><a href="kariera.html">Kariéra</a></li>
-                <li><a href="#Contacts">Kontakty</a></li>
-                <li><a href="#">O nás</a></li>
-                <li><a href="#Products">Produkty</a></li>
+                <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%69%6E%66%6F%40%61%6C%74%64%2E%63%7A"><span class="icon-envelope icon"></span>info@altd.cz</a></li>
             </ul>
         </div>
     </footer>
@@ -184,7 +182,6 @@
     <div class="footer-copy">
         <p>&copy; 2021 alt digital s.r.o.</p>
     </div>
-
 
     <script type="text/javascript">
         //sticky function
