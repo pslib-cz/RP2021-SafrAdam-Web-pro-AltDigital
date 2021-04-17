@@ -202,7 +202,6 @@
         </section>
 
         <section class="contacts" id="Contacts">
-            <h2>Kontakty</h2>
             <div class="contacts-items">
                 <ul>
                     <li><a href="tel:+420776691343"><span class="icon-phone icon"></span>+420 776 691 343</a></li>
@@ -220,14 +219,18 @@
 
 
     <script type="text/javascript">
-        (function () {
-            var burger = document.querySelector('.burger-container');
-            var header = document.querySelector('header');
+        var burger = document.querySelector(".burger-container");
+        var header = document.querySelector("header");
+        var close = document.querySelector("body")
 
-            burger.onclick = function () {
-                header.classList.toggle('menu-opened');
-            };
-        })();
+        burger.addEventListener("click", (event) => {
+            event.stopPropagation();
+            header.classList.toggle("menu-opened");
+        });
+
+        close.addEventListener("click", () => {
+            header.classList.remove("menu-opened");
+        });
     </script>
 
     <script type="text/javascript">

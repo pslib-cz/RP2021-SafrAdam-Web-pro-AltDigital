@@ -116,32 +116,36 @@
             </div>
         </section>
 
+        <section class="contacts" id="Contacts">
+            <div class="contacts-items">
+                <ul>
+                    <li><a href="tel:+420776691343"><span class="icon-phone icon"></span>+420 776 691 343</a></li>
+                    <li><a><span class="icon-location icon"></span>Smolný vrch 410/3, 460 01 Liberec</a></li>
+                    <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%69%6E%66%6F%40%61%6C%74%64%2E%63%7A"><span
+                                class="icon-envelope icon"></span>info@altd.cz</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <footer id="Contacts">
-        <div class="footer-items">
-            <ul>
-                <li><a><span class="icon-location icon"></span>Smolný vrch 410/3, 460 01 Liberec</a></li>
-                <li><a href="tel:+420776691343"><span class="icon-phone icon"></span>+420 776 691 343</a></li>
-                <li><a href="mailto:info@altd.cz"><span class="icon-envelope icon"></span>info@altd.cz</a></li>
-            </ul>
-        </div>
+    <footer>
+        <p>&copy; 2021 alt digital s.r.o.</p>
     </footer>
-
-    <div class="footer-copy">
-        <p>&copy;2021 alt digital s.r.o.</p>
-    </div>
 
 
     <script type="text/javascript">
-        (function () {
-          var burger = document.querySelector('.burger-container');
-          var header = document.querySelector('header');
-        
-          burger.onclick = function () {
-            header.classList.toggle('menu-opened');
-          };
-        })();    
+        var burger = document.querySelector(".burger-container");
+        var header = document.querySelector("header");
+        var close = document.querySelector("body")
+
+        burger.addEventListener("click", (event) => {
+            event.stopPropagation();
+            header.classList.toggle("menu-opened");
+        });
+
+        close.addEventListener("click", () => {
+            header.classList.remove("menu-opened");
+        });
     </script>
 
 </body>

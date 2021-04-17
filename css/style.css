@@ -166,7 +166,8 @@ header ul.menu li.menu-item a {
     text-decoration: none;
     font-size: 22px;
     line-height: 2.35;
-    opacity: 0.8;;
+    opacity: 0.8;
+    ;
     width: 100%;
 }
 
@@ -388,6 +389,7 @@ h3 {
     position: absolute;
     top: 0;
 }
+
 .slide-container .slide img {
     width: 100%;
 }
@@ -557,7 +559,7 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    
+
     header {
         display: flex;
         justify-content: space-between;
@@ -606,15 +608,20 @@ footer p {
     header ul.menu li.menu-item a {
         font-size: 16px;
     }
-    
-    header ul.menu li.menu-item a, header a.icon.brand, header .lang a {
+
+    header ul.menu li.menu-item a,
+    header a.icon.brand,
+    header .lang a {
         -webkit-transition: opacity 0.3s ease;
         transition: opacity 0.3s ease;
         margin: auto 0;
         height: fit-content;
         line-height: 1.15;
     }
-    header ul.menu li.menu-item a:hover, header a.icon.brand:hover, header .lang a:hover {
+
+    header ul.menu li.menu-item a:hover,
+    header a.icon.brand:hover,
+    header .lang a:hover {
         opacity: 1;
         -webkit-transition: opacity 0.3s ease;
         transition: opacity 0.3s ease;
@@ -693,7 +700,7 @@ footer p {
         padding-left: calc(((100vw - 8px) - 800px)/2);
     }
 
-    header ul.menu  {
+    header ul.menu {
         margin: 0 calc((((100vw - 8px) - 800px)/2)/4);
     }
 
@@ -749,7 +756,7 @@ footer p {
         padding-left: calc(((100vw - 12px) - 1100px)/2);
     }
 
-    header ul.menu  {
+    header ul.menu {
         margin: 0 calc((((100vw - 8px) - 1100px)/2)/4);
     }
 
@@ -770,7 +777,7 @@ footer p {
     header .menu a {
         font-size: 18px;
     }
-    
+
     header .menu a {
         margin: 0px 18px;
     }
