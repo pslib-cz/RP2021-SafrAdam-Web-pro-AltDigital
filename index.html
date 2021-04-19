@@ -20,21 +20,21 @@
 </head>
 
 <body>
-    <header>
-        <div class="burger-container">
-            <div class="burger">
-                <div class="bar topBar"></div>
-                <div class="bar btmBar"></div>
+    <header class="burger">
+        <div class="burger--container">
+            <div class="burger--button">
+                <div class="burger--bar burger--bar__topBar"></div>
+                <div class="burger--bar burger--bar__bottomBar"></div>
             </div>
         </div>
 
-        <a href="#" class="icon brand">&#8706;</a>
-        <ul class="menu">
-            <li class="menu-item"><a href="#About">O nás</a></li>
-            <li class="menu-item"><a href="#Services">Služby</a></li>
-            <li class="menu-item"><a href="#Products">Produkty</a></li>
-            <li class="menu-item"><a href="#Contacts">Kontakty</a></li>
-            <li class="menu-item"><a href="kariera.html">Kariéra</a></li>
+        <a href="#" class="brand icon">&#8706;</a>
+        <ul class="nav-menu">
+            <li class="nav-menu--item"><a href="#About">O nás</a></li>
+            <li class="nav-menu--item"><a href="#Services">Služby</a></li>
+            <li class="nav-menu--item"><a href="#Products">Produkty</a></li>
+            <li class="nav-menu--item"><a href="#Contacts">Kontakty</a></li>
+            <li class="nav-menu--item"><a href="kariera.html">Kariéra</a></li>
         </ul>
         <div class="translate icon">
             <div class="lang"><a href="#">CZ</a></div>
@@ -71,30 +71,29 @@
         <section class="services" id="Services">
             <h2>Služby</h2>
 
-            <div class="flipboxGallery">
-
-                <div class="flipbox">
-                    <div class="flip">
-                        <div class="front">
+            <div class="flipbox-gallery">
+                <div class="flipbox-gallery--box">
+                    <div class="flipbox-gallery--flip">
+                        <div class="flipbox-gallery--flip__front">
                             <img src="./img/Services/software_design.jpg" alt="software design"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Software design</span>
                         </div>
-                        <div class="back">
+                        <div class="flipbox-gallery--flip__back">
                             <h3>Software design</h3>
                             <p>Děláme tohle a umíme tohle</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="flipbox">
-                    <div class="flip">
-                        <div class="front">
+                <div class="flipbox-gallery--box">
+                    <div class="flipbox-gallery--flip">
+                        <div class="flipbox-gallery--flip__front">
                             <img src="./img/Services/hardware_design.jpg" alt="hardware design"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Hardware design</span>
                         </div>
-                        <div class="back">
+                        <div class="flipbox-gallery--flip__back">
                             <h3>Hardware design</h3>
                             <p>Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme
                                 tohle a umíme tohle.</p>
@@ -102,14 +101,14 @@
                     </div>
                 </div>
 
-                <div class="flipbox">
-                    <div class="flip">
-                        <div class="front">
+                <div class="flipbox-gallery--box">
+                    <div class="flipbox-gallery--flip">
+                        <div class="flipbox-gallery--flip__front">
                             <img src="./img/Services/pcb_manufacturing.jpg" alt="výroba desek"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Výroba</span>
                         </div>
-                        <div class="back">
+                        <div class="flipbox-gallery--flip__back">
                             <h3>Výroba</h3>
                             <p>Děláme tohle a umíme tohle</p>
                         </div>
@@ -122,7 +121,7 @@
             <h2>Produkty</h2>
 
             <div class="slide-container">
-                <div class="slide fade">
+                <div class="slide-container--slide fade">
                     <p>
                         Druhý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem
                         centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je
@@ -133,7 +132,7 @@
                         <span>Jiný obrázek</span>
                     </a>
                 </div>
-                <div class="slide fade">
+                <div class="slide-container--slide fade">
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet
                         pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean placerat.
@@ -144,7 +143,7 @@
                         <span>Jiný obrázek</span>
                     </a>
                 </div>
-                <div class="slide fade">
+                <div class="slide-container--slide fade">
                     <p>
                         Druhý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem
                         centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je
@@ -155,7 +154,7 @@
                         <span>Jiný obrázek</span>
                     </a>
                 </div>
-                <div class="slide fade">
+                <div class="slide-container--slide fade">
                     <p>
                         Druhý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem
                         centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je
@@ -167,8 +166,8 @@
                     </a>
                 </div>
 
-                <a class="prev" title="Previous">&#10094;</a>
-                <a class="next" title="Next">&#10095;</a>
+                <a class="slide-container--button__prev" title="Previous">&#10094;</a>
+                <a class="slide-container--button__next" title="Next">&#10095;</a>
             </div>
             <div class="dots-container">
                 <span class="dot"></span>
@@ -219,7 +218,7 @@
 
 
     <script type="text/javascript">
-        var burger = document.querySelector(".burger-container");
+        var burger = document.querySelector(".burger--container");
         var header = document.querySelector("header");
         var close = document.querySelector("body")
 
@@ -236,7 +235,7 @@
     <script type="text/javascript">
         //slider
         var currentSlide = 0;
-        const slides = document.querySelectorAll(".slide")
+        const slides = document.querySelectorAll(".slide-container--slide")
         const dots = document.querySelectorAll('.dot')
 
         const init = (n) => {
@@ -261,12 +260,12 @@
             init(currentSlide)
         }
 
-        document.querySelector(".next").addEventListener('click', next)
-        document.querySelector(".prev").addEventListener('click', prev)
+        document.querySelector(".slide-container--button__next").addEventListener('click', next)
+        document.querySelector(".slide-container--button__prev").addEventListener('click', prev)
 
         setInterval(() => {
             next()
-        }, 5000);
+        }, 8000);
 
         dots.forEach((dot, index) => {
             dot.addEventListener("click", () => {

@@ -17,22 +17,21 @@
 </head>
 
 <body>
-
-    <header>
-        <div class="burger-container">
-            <div class="burger">
-                <div class="bar topBar"></div>
-                <div class="bar btmBar"></div>
+    <header class="burger">
+        <div class="burger--container">
+            <div class="burger--button">
+                <div class="burger--bar burger--bar__top"></div>
+                <div class="burger--bar burger--bar__bottom"></div>
             </div>
         </div>
 
         <a href="index.html" class="icon brand">&#8706;</a>
-        <ul class="menu">
-            <li class="menu-item"><a href="index.html">O nás</a></li>
-            <li class="menu-item"><a href="index.html">Služby</a></li>
-            <li class="menu-item"><a href="index.html">Produkty</a></li>
-            <li class="menu-item"><a href="#Contacts">Kontakty</a></li>
-            <li class="menu-item"><a href="#">Kariéra</a></li>
+        <ul class="nav-menu">
+            <li class="nav-menu--item"><a href="index.html">O nás</a></li>
+            <li class="nav-menu--item"><a href="index.html">Služby</a></li>
+            <li class="nav-menu--item"><a href="index.html">Produkty</a></li>
+            <li class="nav-menu--item"><a href="#Contacts">Kontakty</a></li>
+            <li class="nav-menu--item"><a href="#">Kariéra</a></li>
         </ul>
         <div class="translate icon">
             <div class="lang"><a href="#">CZ</a></div>
@@ -60,10 +59,10 @@
                 případě zájmu nás neváhejte kontaktovat.</p>
         </section>
 
-        <section class="positions">
+        <section class="job">
             <h2>Volné pozice</h2>
             <div>
-                <div class="job">
+                <div class="job--item">
                     <h3>Embedded SW designer</h3>
                     <ul>
                         <li>znalost ANSI C</li>
@@ -72,7 +71,7 @@
                         <li>znalost programovacích technik pro embeded systémy</li>
                     </ul>
                 </div>
-                <div class="job">
+                <div class="job--item">
                     <h3>Embedded HW designer</h3>
                     <ul>
                         <li>znalost návrhu HW</li>
@@ -83,7 +82,7 @@
                         <li>znalost nástroje HyperLynx výhodou</li>
                     </ul>
                 </div>
-                <div class="job">
+                <div class="job--item">
                     <h3>Uklízečka</h3>
                     <ul>
                         <li>znalost ANSI C</li>
@@ -97,7 +96,7 @@
 
         <section>
             <h2>Fotogalerie našich kanceláří</h2>
-            <div class="gallery">
+            <div class="photo-gallery">
                 <a>
                     <img src="./img/kancl1.jpg" alt="kancelář">
                 </a>
@@ -134,7 +133,7 @@
 
 
     <script type="text/javascript">
-        var burger = document.querySelector(".burger-container");
+        var burger = document.querySelector(".burger--container");
         var header = document.querySelector("header");
         var close = document.querySelector("body")
 
