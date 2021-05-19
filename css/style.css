@@ -12,9 +12,13 @@ a:any-link {
 
 body {
     min-width: 320px;
-    background: #f5f5f7;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(96deg, rgba(255,255,255,1) 0%, rgba(239,239,241,1) 45%, rgba(231,231,231,1) 100%);
+    background: -webkit-linear-gradient(96deg, rgba(255,255,255,1) 0%, rgba(239,239,241,1) 45%, rgba(231,231,231,1) 100%);
+    background: linear-gradient(96deg, rgba(255,255,255,1) 0%, rgba(239,239,241,1) 45%, rgba(231,231,231,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e7e7e7",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#d1d1d1", GradientType=1);
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
 header {
@@ -115,7 +119,7 @@ header .translate__lang {
     align-self: center;
 }
 
-.header .translate__lang a { 
+.header .translate__lang a {
     text-decoration: none;
     color: #f5f5f7;
 }
@@ -489,6 +493,7 @@ main section {
     margin-right: 1em;
     transition: 0.5s;
 }
+
 .photo-gallery img:hover {
     transform: scale(1.1);
     transition: 0.5s;
@@ -516,7 +521,7 @@ main section {
     opacity: 1;
 }
 
-.contacts { 
+.contacts {
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -547,22 +552,23 @@ footer p {
 }
 
 .job__item ul::before {
-    display:block;
+    display: block;
     color: rgba(0, 0, 0, 0.80);
     content: '';
-    border-bottom: 2px solid #676767; 
+    border-bottom: 2px solid #676767;
     margin-bottom: 10px;
-    transform: scaleX(0);  
+    transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
-}   
+}
 
-.job__item ul.border:hover, .job__item:hover .job__item ul.border{ 
-    transform-origin:  0% 50%; 
+.job__item ul.border:hover,
+.job__item:hover .job__item ul.border {
+    transform-origin: 0% 50%;
 }
 
 .job__item ul:hover::before {
     transform: scaleX(1);
-    }
+}
 
 @media (min-width: 768px) {
 
@@ -636,12 +642,12 @@ footer p {
     header .translate__lang {
         margin-top: -3.5px;
     }
-    
+
     header .translate__lang a {
         font-size: 12px;
         margin: 0 0.2em;
     }
-    
+
     .podheader {
         min-height: 50vh;
         margin-top: 45px;
@@ -735,7 +741,7 @@ footer p {
     }
 
     .job .job__item {
-        width: 360px;   
+        width: 360px;
         margin: 0;
     }
 
@@ -754,7 +760,7 @@ footer p {
     .contacts a {
         color: #86868b;
     }
-    
+
     .contacts a:hover {
         color: rgba(0, 0, 0, 0.80);
         transition: color 0.4s;
