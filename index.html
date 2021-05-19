@@ -5,13 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
     <title>Hlavní stránka | altdigital</title>
-    <link rel="shortcut icon" href="./img/logo.svg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="./img/logo.ico">
+    <link rel="shortcut icon" href="./img/logo.ico">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/typo.css">
     <link rel="stylesheet" href="./css/icomoon.css">
@@ -20,8 +16,8 @@
 
 <body>
     <header class="burger">
-        <div class="burger--container">
-            <div class="burger--button">
+        <div class="burger__container">
+            <div class="burger__button">
                 <div class="burger--bar burger--bar__top"></div>
                 <div class="burger--bar burger--bar__bottom"></div>
             </div>
@@ -29,21 +25,19 @@
 
         <a href="#" class="brand icon">&#8706;</a>
         <ul class="nav-menu">
-            <li class="nav-menu--item"><a href="#About">O nás</a></li>
-            <li class="nav-menu--item"><a href="#Services">Služby</a></li>
-            <li class="nav-menu--item"><a href="#Products">Produkty</a></li>
-            <li class="nav-menu--item"><a href="#Contacts">Kontakty</a></li>
-            <li class="nav-menu--item"><a href="kariera.html">Kariéra</a></li>
+            <li class="nav-menu__item"><a href="#About">O nás</a></li>
+            <li class="nav-menu__item"><a href="#Services">Služby</a></li>
+            <li class="nav-menu__item"><a href="#Products">Produkty</a></li>
+            <li class="nav-menu__item"><a href="#Contacts">Kontakty</a></li>
+            <li class="nav-menu__item"><a href="kariera.html">Kariéra</a></li>
         </ul>
         <div class="translate icon">
-            <div class="lang"><a href="#">CZ</a></div>
-            <div class="lang"><a href="#">EN</a></div>
-        </div>
+            <div class="translate__lang"><a>CZ</a>/<a href="en.html">EN</a></div>
         </div>
     </header>
 
     <section class="podheader">
-        <div class="title">
+        <div class="podheader__title">
             <p>&#8706;</p>
             <div class="nadpis">
                 <h1>alt digital</h1>
@@ -55,61 +49,63 @@
     <main>
         <section id="About">
             <h2>O nás</h2>
-            <p>Firma alt digital s.r.o. se od roku 2018 zaměřuje na vývoj elektroniky a výrobky určené primárně pro
-                diagnostiku parních turbín a související energo problematiku. Jsme členem skupiny Jablotron. Jablotron
+            <p>Firma alt digital s.r.o. se od roku 2018 zaměřuje na vývoj elektroniky, programování a výrobu desek
+                plošných spojů. Jsme členem skupiny Jablotron. Jablotron
                 je jedním z největších výrobců elektronických systémů v České Republice, který exportuje svoji produkci
                 do více než 80ti zemí světa. To nám pomáhá garantovat vysoké nároky na kvalitu ve výrobě.</p>
             <p>Tyto základní pilíře nám otevírají příležitosti na trzích a dávají nám možnost nabízet vývoj produktů
                 jako komplexní službu od studie proveditelnosti přes návrh až po samotnou výrobu. Ve spolupráci s
-                výrobními firmami v holdingu, jakou je např. JabloPCB jsme schopni zaručit kvalitu a koordinovat
-                velkoobjemovou výrobu i u sérií v řádech 100.000 kusů. </p>
-            <p>Na základě mnohaletých zkušeností, kvalitního týmu, širokého zázemí skupiny Jablotron a také věděcké
-                historii zakládajících členů rádi přijímáme i výzvy na hranici technické realizovatelnosti.</p>
+                výrobními firmami v holdingu, jakou je např. JabloPCB, jsme schopni zaručit kvalitu a koordinovat
+                velkoobjemovou výrobu.</p>
+            <p>Na základě našich zkušeností, kvalitního týmu, širokého zázemí a také věděcké
+                historii zakládajících členů rádi přijímáme výzvy na hranici technické realizovatelnosti.</p>
         </section>
 
         <section class="services" id="Services">
             <h2>Služby</h2>
 
             <div class="flipbox-gallery">
-                <div class="flipbox-gallery--box">
+                <div class="flipbox-gallery__box">
                     <div class="flipbox-gallery--flip">
-                        <div class="flipbox-gallery--flip__front">
+                        <div class="flipbox-gallery__front">
                             <img src="./img/Services/software_design.jpg" alt="software design"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Software design</span>
                         </div>
-                        <div class="flipbox-gallery--flip__back">
+                        <div class="flipbox-gallery__back">
                             <h3>Software design</h3>
-                            <p>Děláme tohle a umíme tohle</p>
+                            <p>Vyvíjíme software pro elektronická zařízení a embeded systémy. Naše technologie zahrnuje
+                                Embedded Linux, Android / iOS, RTOS, bare Metal, C / C ++, VHDL, Verilog atd.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="flipbox-gallery--box">
+                <div class="flipbox-gallery__box">
                     <div class="flipbox-gallery--flip">
-                        <div class="flipbox-gallery--flip__front">
+                        <div class="flipbox-gallery__front">
                             <img src="./img/Services/hardware_design.jpg" alt="hardware design"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Hardware design</span>
                         </div>
-                        <div class="flipbox-gallery--flip__back">
+                        <div class="flipbox-gallery__back">
                             <h3>Hardware design</h3>
-                            <p>Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme tohle a umíme tohle.Děláme
-                                tohle a umíme tohle.</p>
+                            <p>Provedeme schematický design a návrh desek plošných spojů, simulaci, analýzu, testování a
+                                uvedení do provozu.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="flipbox-gallery--box">
+                <div class="flipbox-gallery__box">
                     <div class="flipbox-gallery--flip">
-                        <div class="flipbox-gallery--flip__front">
+                        <div class="flipbox-gallery__front">
                             <img src="./img/Services/pcb_manufacturing.jpg" alt="výroba desek"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Výroba</span>
                         </div>
-                        <div class="flipbox-gallery--flip__back">
+                        <div class="flipbox-gallery__back">
                             <h3>Výroba</h3>
-                            <p>Děláme tohle a umíme tohle</p>
+                            <p>Od společnosti JabloPCB se můžeme spolehnout na kvalitu a včasné dodání, od malých objemů
+                                až po výrobu ve velkém.</p>
                         </div>
                     </div>
                 </div>
@@ -120,59 +116,51 @@
             <h2>Produkty</h2>
 
             <div class="slide-container">
-                <div class="slide-container--slide fade">
+                <div class="slide-container__slide slide-container__slide--fade">
                     <p>
-                        Druhý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem
-                        centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je
-                        vybavený základní přepěťovou ochranou.
+                        Produkty se fotí a brzy budou uvedeny na webu.
                     </p>
-                    <a>
+                    <a href="#">
                         <img src="./img/modul.png" alt="">
-                        <span>Jiný obrázek</span>
+                        <span>Ilustrační obrázek</span>
                     </a>
                 </div>
-                <div class="slide-container--slide fade">
+                <div class="slide-container__slide slide-container__slide--fade">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit, ligula sit amet
-                        pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean placerat.
-                        Cras elementum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Produkty se fotí a brzy budou uvedeny na webu.
                     </p>
-                    <a>
+                    <a href="#">
                         <img src="./img/modul.png" alt="">
-                        <span>Jiný obrázek</span>
+                        <span>Ilustrační obrázek</span>
                     </a>
                 </div>
-                <div class="slide-container--slide fade">
+                <div class="slide-container__slide slide-container__slide--fade">
                     <p>
-                        Druhý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem
-                        centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je
-                        vybavený základní přepěťovou ochranou.
+                        Produkty se fotí a brzy budou uvedeny na webu.
                     </p>
-                    <a>
+                    <a href="#">
                         <img src="./img/modul.png" alt="">
-                        <span>Jiný obrázek</span>
+                        <span>Ilustrační obrázek</span>
                     </a>
                 </div>
-                <div class="slide-container--slide fade">
+                <div class="slide-container__slide slide-container__slide--fade">
                     <p>
-                        Druhý produkt. Ústředna s tímto modulem předává poplachové hlasové zprávy, komunikuje s pultem
-                        centrální ochrany a umožňuje vzdálený přístup. Komunikátor pracuje pouze s tónovou volbou. Je
-                        vybavený základní přepěťovou ochranou.
+                        Produkty se fotí a brzy budou uvedeny na webu.
                     </p>
-                    <a>
+                    <a href="#">
                         <img src="./img/modul.png" alt="">
-                        <span>Jiný obrázek</span>
+                        <span>Ilustrační obrázek</span>
                     </a>
                 </div>
 
-                <a class="slide-container--button__prev" title="Previous">&#10094;</a>
-                <a class="slide-container--button__next" title="Next">&#10095;</a>
+                <a class="slide-container--button__prev" title="Předchozí">&#10094;</a>
+                <a class="slide-container--button__next" title="Další">&#10095;</a>
             </div>
             <div class="dots-container">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dots-container__dot"></span>
+                <span class="dots-container__dot"></span>
+                <span class="dots-container__dot"></span>
+                <span class="dots-container__dot"></span>
             </div>
 
         </section>
@@ -200,24 +188,22 @@
         </section>
 
         <section class="contacts" id="Contacts">
-            <div class="contacts-items">
-                <ul>
-                    <li><a href="tel:+420776691343"><span class="icon-phone icon"></span>+420 776 691 343</a></li>
-                    <li><a><span class="icon-location icon"></span>Smolný vrch 410/3, 460 01 Liberec</a></li>
-                    <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%69%6E%66%6F%40%61%6C%74%64%2E%63%7A"><span
-                                class="icon-envelope icon"></span>info@altd.cz</a></li>
-                </ul>
-            </div>
+            <h2>Kontakty</h2>
+            <a href="mailto:info@altd.cz">info@altd.cz</a>
+            <a href="tel:+420776691343">+420 776 691 343</a>
+            <a>Smolný vrch 410/3</a>
+            <a>460 15, Liberec 15</a>
+            <a>IČ: 07190883 DIČ: CZ07190883</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2021 alt digital s.r.o.</p>
+        <p>Copyright &copy; 2021 alt digital s.r.o. Všechna práva vyhrazena.</p>
     </footer>
 
 
     <script type="text/javascript">
-        var burger = document.querySelector(".burger--container");
+        var burger = document.querySelector(".burger__container");
         var header = document.querySelector("header");
         var close = document.querySelector("body")
 
@@ -232,10 +218,9 @@
     </script>
 
     <script type="text/javascript">
-        //slider
         var currentSlide = 0;
-        const slides = document.querySelectorAll(".slide-container--slide")
-        const dots = document.querySelectorAll('.dot')
+        const slides = document.querySelectorAll(".slide-container__slide")
+        const dots = document.querySelectorAll('.dots-container__dot')
 
         const init = (n) => {
             slides.forEach((slide) => {
@@ -269,7 +254,7 @@
         dots.forEach((dot, index) => {
             dot.addEventListener("click", () => {
                 init(index)
-                currentSlide = i
+                currentSlide = i;
             })
         })
     </script>
