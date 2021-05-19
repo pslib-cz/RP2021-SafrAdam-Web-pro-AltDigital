@@ -3,7 +3,9 @@ Web pro alt digital
 
 http://altd.cz/new/new
 
-Ročníková práace L3
+Ročníková práce L3
+
+Odevzdání: 7.6. 2021
 
 Tvorba webu pro firmu AltDigital s. r. o. Dle požadavků bude mít web obsáhlou mainpage se sekcemi O nás, Naše kompetence, Naše produkty, Naši sponzoři (slideshow a galerie) a další stránku s kontakty a kariérou. Mým cílem je vytvořit funkční responzivní web.
 
