@@ -755,6 +755,7 @@ footer p {
     .job .job__item {
         width: 360px;
         margin: 0;
+        height: 200px;
     }
 
     .job .job__item:nth-child(2) {
