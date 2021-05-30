@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career | altdigital</title>
+    <link rel="shortcut icon" href="./img/logo.svg">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/typo.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="burger">
+        <div class="burger__container">
+            <div class="burger__button">
+                <div class="burger--bar burger--bar__top"></div>
+                <div class="burger--bar burger--bar__bottom"></div>
+            </div>
+        </div>
+
+        <a href="en.html" class="icon brand">&#8706;</a>
+        <ul class="nav-menu">
+            <li class="nav-menu__item"><a href="en.html">About us</a></li>
+            <li class="nav-menu__item"><a href="en.html">Services</a></li>
+            <li class="nav-menu__item"><a href="en.html">Products</a></li>
+            <li class="nav-menu__item"><a href="#Contacts">Contacts</a></li>
+            <li class="nav-menu__item"><a href="#">Career</a></li>
+        </ul>
+        <div class="translate icon">
+            <div class="translate__lang"><a href="kariera.html">CZ</a>/<a>EN</a></div>
+        </div>
+    </header>
+
+    <section class="podheader">
+        <div class="podheader__title">
+            <p>&#8706;</p>
+            <div class="nadpis">
+                <h1>alt digital</h1>
+                <p>electronics design house</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="paragraph" id="About">
+            <h2>Career</h2>
+            <p>We offer an above-standard working environment with modern work equipment. We are a great team, we offer
+                good salary and work on really interesting projects. If you are interested, do not hesitate to <a class="click"
+                    href="#Contacts">contact us</a>.</p>
+        </section>
+
+        <section class="job">
+            <h2>Available positions</h2>
+            <div>
+                <div class="job__item border">
+                    <h3>Embedded SW designer</h3>
+                    <ul>
+                        <li>knowledge of <strong>ANSI C</strong></li>
+                        <li>knowledge of <strong>HW designing</strong></li>
+                        <li>knowledge of creating <strong>model documentation</strong></li>
+                        <li>knowledge of techniques for <strong>embeded systems</strong></li>
+                    </ul>
+                </div>
+                <div class="job__item border">
+                    <h3>Embedded HW designer</h3>
+                    <ul>
+                        <li>knowledge of <strong>HW designing</strong></li>
+                        <li>interest in the <strong>high-speed designu</strong>proposal</li>
+                        <li>knowledge of the tool <strong>Altium</strong> is an advantage</li>
+                        <li>knowledge of the tool <strong>SolidWorks</strong> is an advantage</li>
+                        <li>knowledge of the tool <strong>HyperLynx</strong> is an advantage</li>
+                    </ul>
+                </div>
+                <div class="job__item border">
+                    <h3>Volunteer</h3>
+                    <ul>
+                        <li>experience in the field of <strong>electrotechnical engineering</strong></li>
+                        <li><strong>reliability</strong></li>
+                        <li>knowledge of the tool <strong>SolidWorks</strong> is an advantage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Photogallery of our offices</h2>
+            <div class="photo-gallery">
+
+                <img src="./img/kancl1.jpg" alt="kancelář se židlemi a velkým stolem">
+
+                <img src="./img/kancl2.jpg" alt="paní sedící u počítače a dvou monitorů">
+
+                <img src="./img/kancl3.jpg" alt="kancelář s prosklenými dveřmi">
+
+                <img src="./img/kancl4.png" alt="kancelář s pěkným výhledem">
+
+                <img src="./img/kancl5.png" alt="kancelář s lidmi">
+
+            </div>
+        </section>
+
+        <section class="contacts" id="Contacts">
+            <h2>Contacts</h2>
+            <a href="mailto:info@altd.cz">info@altd.cz</a>
+            <a href="tel:+420776691343">+420 776 691 343</a>
+            <a>Smolný vrch 410/3</a>
+            <a>460 15, Liberec 15</a>
+            <a>IČ: 07190883 DIČ: CZ07190883</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2021 alt digital s.r.o. All rights reserved.</p>
+    </footer>
+
+
+    <script type="text/javascript">
+        var burger = document.querySelector(".burger__container");
+        var header = document.querySelector("header");
+        var close = document.querySelector("body")
+
+        burger.addEventListener("click", (event) => {
+            event.stopPropagation();
+            header.classList.toggle("menu-opened");
+        });
+
+        close.addEventListener("click", () => {
+            header.classList.remove("menu-opened");
+        });
+    </script>
+
+
+</body>
+
+</html>
