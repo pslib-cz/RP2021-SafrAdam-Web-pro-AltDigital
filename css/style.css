@@ -258,7 +258,7 @@ main section {
     margin: 1em 1em 1em 0;
 }
 
-.flipbox-gallery--flip {
+.flipbox-gallery__flip {
     position: relative;
     display: block;
     width: 100%;
@@ -272,7 +272,7 @@ main section {
     border-radius: 20px 5px;
 }
 
-.flipbox-gallery__box:hover .flipbox-gallery--flip {
+.flipbox-gallery__box:hover .flipbox-gallery__flip {
     transform: rotateY(+180deg);
     -webkit-transform: rotateY(+180deg);
 }
