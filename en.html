@@ -23,18 +23,18 @@
     <header class="burger">
         <div class="burger__container">
             <div class="burger__container__button">
-                <div class="burger__bar burger__bar--top"></div>
-                <div class="burger__bar burger__bar--bottom"></div>
+                <div class="burger__container__button__bar burger__container__button__bar--top"></div>
+                <div class="burger__container__button__bar burger__container__button__bar--bottom"></div>
             </div>
         </div>
 
         <a href="#" class="burger__brand icon">&#8706;</a>
-        <ul class="nav-menu">
-            <li class="nav-menu__item"><a href="#About">About us</a></li>
-            <li class="nav-menu__item"><a href="#Services">Services</a></li>
-            <li class="nav-menu__item"><a href="#Products">Products</a></li>
-            <li class="nav-menu__item"><a href="#Contacts">Contacts</a></li>
-            <li class="nav-menu__item"><a href="career.html">Career</a></li>
+        <ul class="burger__nav-menu">
+            <li class="burger__nav-menu__item"><a href="#About">About us</a></li>
+            <li class="burger__nav-menu__item"><a href="#Services">Services</a></li>
+            <li class="burger__nav-menu__item"><a href="#Products">Products</a></li>
+            <li class="burger__nav-menu__item"><a href="#Contacts">Contacts</a></li>
+            <li class="burger__nav-menu__item"><a href="career.html">Career</a></li>
         </ul>
         <div class="burger__translate icon">
             <div class="burger__translate__lang"><a href="index.html">CZ</a>/<a>EN</a></div>
@@ -160,11 +160,11 @@
                 <a class="slide-container__button slide-container__button--prev" title="Předchozí">&#10094;</a>
                 <a class="slide-container__button slide-container__button--next" title="Další">&#10095;</a>
             </div>
-            <div class="dots-container">
-                <span class="dots-container__dot"></span>
-                <span class="dots-container__dot"></span>
-                <span class="dots-container__dot"></span>
-                <span class="dots-container__dot"></span>
+            <div class="slide__dots-container">
+                <span class="slide__dots-container__dot"></span>
+                <span class="slide__dots-container__dot"></span>
+                <span class="slide__dots-container__dot"></span>
+                <span class="slide__dots-container__dot"></span>
             </div>
 
         </section>
@@ -224,7 +224,7 @@
     <script type="text/javascript">
         var currentSlide = 0;
         const slides = document.querySelectorAll(".slide-container__slide")
-        const dots = document.querySelectorAll('.dots-container__dot')
+        const dots = document.querySelectorAll('.slide__dots-container__dot')
 
         const init = (n) => {
             slides.forEach((slide) => {

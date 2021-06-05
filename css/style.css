@@ -59,7 +59,7 @@ header .burger__container__button {
     top: 50%;
 }
 
-header .burger__container__button .burger__bar {
+header .burger__container__button .burger__container__button__bar {
     width: 100%;
     height: 1px;
     display: block;
@@ -69,12 +69,12 @@ header .burger__container__button .burger__bar {
     transition: all 0.3s linear;
 }
 
-header .burger__container__button .burger__bar.burger__bar--top {
+header .burger__container__button .burger__container__button__bar.burger__container__button__bar--top {
     -webkit-transform: translateY(0px) rotate(0deg);
     transform: translateY(0px) rotate(0deg);
 }
 
-header .burger__container__button .burger__bar.burger__bar--bottom {
+header .burger__container__button .burger__container__button__bar.burger__container__button__bar--bottom {
     -webkit-transform: translateY(8px) rotate(0deg);
     transform: translateY(8px) rotate(0deg);
 }
@@ -124,7 +124,7 @@ header .burger__translate__lang {
     color: rgb(255, 255, 255);
 }
 
-header ul.nav-menu {
+header ul.burger__nav-menu {
     display: none;
     position: relative;
     padding: 0px 48px 0;
@@ -135,11 +135,11 @@ header ul li {
     list-style: none;
 }
 
-header.menu-opened ul.nav-menu {
+header.menu-opened ul.burger__nav-menu {
     display: block;
 }
 
-header ul.nav-menu li.nav-menu__item {
+header ul.burger__nav-menu li.burger__nav-menu__item {
     border-bottom: 1px solid rgb(17, 17, 17);
     margin-top: 5px;
     -webkit-transform: scale(1.15) translateY(-30px);
@@ -151,7 +151,7 @@ header ul.nav-menu li.nav-menu__item {
     transition: transform 0.5s linear, opacity 0.6s linear, -webkit-transform 0.5s linear;
 }
 
-header ul.nav-menu li.nav-menu__item a {
+header ul.burger__nav-menu li.burger__nav-menu__item a {
     display: block;
     position: relative;
     color: rgb(255, 255, 255);
@@ -176,17 +176,17 @@ header.menu-opened .burger__container {
     transform: rotate(90deg);
 }
 
-header.menu-opened .burger__container .burger__container__button .burger__bar.burger__bar--top {
+header.menu-opened .burger__container .burger__container__button .burger__container__button__bar.burger__container__button__bar--top {
     -webkit-transform: translateY(4px) rotate(45deg);
     transform: translateY(4px) rotate(45deg);
 }
 
-header.menu-opened .burger__container .burger__container__button .burger__bar.burger__bar--bottom {
+header.menu-opened .burger__container .burger__container__button .burger__container__button__bar.burger__container__button__bar--bottom {
     -webkit-transform: translateY(3px) rotate(-45deg);
     transform: translateY(3px) rotate(-45deg);
 }
 
-header.menu-opened ul.nav-menu li.nav-menu__item {
+header.menu-opened ul.burger__nav-menu li.burger__nav-menu__item {
     -webkit-transform: scale(1) translateY(0px);
     transform: scale(1) translateY(0px);
     opacity: 1;
@@ -406,14 +406,14 @@ main section {
     right: 2px;
 }
 
-.dots-container {
+.slide__dots-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.dots-container .dots-container__dot {
+.slide__dots-container .slide__dots-container__dot {
     cursor: pointer;
     margin: 5px;
     width: 20px;
@@ -422,7 +422,7 @@ main section {
     background-color: rgb(200, 200, 200);
 }
 
-.dots-container .dots-container__dot.active {
+.slide__dots-container .slide__dots-container__dot.active {
     background-color: rgb(0, 0, 0);
 }
 
@@ -590,7 +590,7 @@ footer p {
         display: none;
     }
 
-    header ul.nav-menu {
+    header ul.burger__nav-menu {
         position: initial;
         display: flex;
         justify-content: space-around;
@@ -602,7 +602,7 @@ footer p {
         margin: 0 37.5px;
     }
 
-    header ul.nav-menu li.nav-menu__item {
+    header ul.burger__nav-menu li.burger__nav-menu__item {
         opacity: 1;
         border-bottom: none;
         transform: none;
@@ -611,11 +611,11 @@ footer p {
         align-self: center;
     }
 
-    header ul.nav-menu li.nav-menu__item a {
+    header ul.burger__nav-menu li.burger__nav-menu__item a {
         font-size: 14px;
     }
 
-    header ul.nav-menu li.nav-menu__item a,
+    header ul.burger__nav-menu li.burger__nav-menu__item a,
     header a.burger__brand,
     header .burger__translate__lang a {
         -webkit-transition: opacity 0.3s ease;
@@ -625,7 +625,7 @@ footer p {
         line-height: 1.15;
     }
 
-    header ul.nav-menu li.nav-menu__item a:hover,
+    header ul.burger__nav-menu li.burger__nav-menu__item a:hover,
     header a.burger__brand:hover,
     header .burger__translate__lang a:hover {
         opacity: 1;
@@ -715,7 +715,7 @@ footer p {
         padding-left: calc((100vw - 810px)/2);
     }
 
-    header ul.nav-menu {
+    header ul.burger__nav-menu {
         margin: 0 calc((((100vw - 8px) - 800px)/2)/4);
     }
 
@@ -769,7 +769,7 @@ footer p {
         padding-left: calc((100vw - 1100px)/2);
     }
 
-    header ul.nav-menu {
+    header ul.burger__nav-menu {
         margin: 0 calc((((100vw - 8px) - 1100px)/2)/4);
     }
 
@@ -787,11 +787,11 @@ footer p {
         max-width: 1100px;
     }
 
-    header .nav-menu a {
+    header .burger__nav-menu a {
         font-size: 18px;
     }
 
-    header .nav-menu a {
+    header .burger__nav-menu a {
         margin: 0px 18px;
     }
 
