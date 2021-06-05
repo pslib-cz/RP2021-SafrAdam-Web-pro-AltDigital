@@ -22,13 +22,13 @@
 <body>
     <header class="burger">
         <div class="burger__container">
-            <div class="burger__button">
-                <div class="burger--bar burger--bar__top"></div>
-                <div class="burger--bar burger--bar__bottom"></div>
+            <div class="burger__container__button">
+                <div class="burger__bar burger__bar--top"></div>
+                <div class="burger__bar burger__bar--bottom"></div>
             </div>
         </div>
 
-        <a href="#" class="brand icon">&#8706;</a>
+        <a href="#" class="burger__brand icon">&#8706;</a>
         <ul class="nav-menu">
             <li class="nav-menu__item"><a href="#About">About us</a></li>
             <li class="nav-menu__item"><a href="#Services">Services</a></li>
@@ -36,8 +36,8 @@
             <li class="nav-menu__item"><a href="#Contacts">Contacts</a></li>
             <li class="nav-menu__item"><a href="career.html">Career</a></li>
         </ul>
-        <div class="translate icon">
-            <div class="translate__lang"><a href="index.html">CZ</a>/<a>EN</a></div>
+        <div class="burger__translate icon">
+            <div class="burger__translate__lang"><a href="index.html">CZ</a>/<a>EN</a></div>
         </div>
     </header>
 
@@ -65,18 +65,18 @@
                 history of founding members, we are happy to accept challenges on the verge of technical feasibility.</p>
         </section>
 
-        <section class="services" id="Services">
+        <section class="flipbox" id="Services">
             <h2>Services</h2>
 
             <div class="flipbox-gallery">
                 <div class="flipbox-gallery__box">
-                    <div class="flipbox-gallery__flip">
-                        <div class="flipbox-gallery__front">
+                    <div class="flipbox-gallery__box__flip">
+                        <div class="flipbox-gallery__box__flip__front">
                             <img src="./img/Services/software_design.jpg" alt="software design"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Software design</span>
                         </div>
-                        <div class="flipbox-gallery__back">
+                        <div class="flipbox-gallery__box__flip__back">
                             <h3>Software design</h3>
                             <p>We develop software for electronic devices and embedded systems. Our technology includes
                                 Embedded Linux, Android / iOS, RTOS, bare Metal, C / C ++, VHDL, Verilog etc.</p>
@@ -85,13 +85,13 @@
                 </div>
 
                 <div class="flipbox-gallery__box">
-                    <div class="flipbox-gallery__flip">
-                        <div class="flipbox-gallery__front">
+                    <div class="flipbox-gallery__box__flip">
+                        <div class="flipbox-gallery__box__flip__front">
                             <img src="./img/Services/hardware_design.jpg" alt="hardware design"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Hardware design</span>
                         </div>
-                        <div class="flipbox-gallery__back">
+                        <div class="flipbox-gallery__box__flip__back">
                             <h3>Hardware design</h3>
                             <p>We make schematic design and design of printed circuit boards, simulation, analysis, testing and
                                 commissioning.</p>
@@ -100,13 +100,13 @@
                 </div>
 
                 <div class="flipbox-gallery__box">
-                    <div class="flipbox-gallery__flip">
-                        <div class="flipbox-gallery__front">
+                    <div class="flipbox-gallery__box__flip">
+                        <div class="flipbox-gallery__box__flip__front">
                             <img src="./img/Services/pcb_manufacturing.jpg" alt="výroba desek"
                                 style="width:230px;height:170px;border-radius: 20px 5px 0 0;">
                             <span>Manufacturing</span>
                         </div>
-                        <div class="flipbox-gallery__back">
+                        <div class="flipbox-gallery__box__flip__back">
                             <h3>Manufacturing</h3>
                             <p>From JabloPCB company, we can rely on quality and timely delivery, from small volumes
                                 until mass production.</p>
@@ -116,7 +116,7 @@
             </div>
         </section>
 
-        <section class="products" id="Products">
+        <section class="slide" id="Products">
             <h2>Products</h2>
 
             <div class="slide-container">
@@ -157,8 +157,8 @@
                     </a>
                 </div>
 
-                <a class="slide-container--button__prev" title="Předchozí">&#10094;</a>
-                <a class="slide-container--button__next" title="Další">&#10095;</a>
+                <a class="slide-container__button slide-container__button--prev" title="Předchozí">&#10094;</a>
+                <a class="slide-container__button slide-container__button--next" title="Další">&#10095;</a>
             </div>
             <div class="dots-container">
                 <span class="dots-container__dot"></span>
@@ -169,7 +169,7 @@
 
         </section>
 
-        <section class="partners">
+        <section class="sponzors">
             <h2>Partners</h2>
             <div class="sponzors-gallery">
                 <a href="https://www.atrea.cz/">
@@ -248,8 +248,8 @@
             init(currentSlide)
         }
 
-        document.querySelector(".slide-container--button__next").addEventListener('click', next)
-        document.querySelector(".slide-container--button__prev").addEventListener('click', prev)
+        document.querySelector(".slide-container__button--next").addEventListener('click', next)
+        document.querySelector(".slide-container__button--prev").addEventListener('click', prev)
 
         setInterval(() => {
             next()

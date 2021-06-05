@@ -50,7 +50,7 @@ header .burger__container {
     user-select: none;
 }
 
-header .burger__button {
+header .burger__container__button {
     display: block;
     width: 20px;
     height: 8px;
@@ -59,7 +59,7 @@ header .burger__button {
     top: 50%;
 }
 
-header .burger__button .burger--bar {
+header .burger__container__button .burger__bar {
     width: 100%;
     height: 1px;
     display: block;
@@ -69,12 +69,12 @@ header .burger__button .burger--bar {
     transition: all 0.3s linear;
 }
 
-header .burger__button .burger--bar.burger--bar__top {
+header .burger__container__button .burger__bar.burger__bar--top {
     -webkit-transform: translateY(0px) rotate(0deg);
     transform: translateY(0px) rotate(0deg);
 }
 
-header .burger__button .burger--bar.burger--bar__bottom {
+header .burger__container__button .burger__bar.burger__bar--bottom {
     -webkit-transform: translateY(8px) rotate(0deg);
     transform: translateY(8px) rotate(0deg);
 }
@@ -93,7 +93,7 @@ header .icon {
     transform: translateX(-50%);
 }
 
-header .translate {
+header .burger__translate {
     display: block;
     right: 25px;
     top: 0;
@@ -108,18 +108,18 @@ header .translate {
     transition-delay: 0.25s;
 }
 
-header .translate__lang {
+header .burger__translate__lang {
     align-self: center;
     height: 100%;
 }
 
-header .translate__lang {
+header .burger__translate__lang {
     font-size: 13px;
     opacity: 0.8;
     align-self: center;
 }
 
-.header .translate__lang a {
+.header .burger__translate__lang a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -176,12 +176,12 @@ header.menu-opened .burger__container {
     transform: rotate(90deg);
 }
 
-header.menu-opened .burger__container .burger__button .burger--bar.burger--bar__top {
+header.menu-opened .burger__container .burger__container__button .burger__bar.burger__bar--top {
     -webkit-transform: translateY(4px) rotate(45deg);
     transform: translateY(4px) rotate(45deg);
 }
 
-header.menu-opened .burger__container .burger__button .burger--bar.burger--bar__bottom {
+header.menu-opened .burger__container .burger__container__button .burger__bar.burger__bar--bottom {
     -webkit-transform: translateY(3px) rotate(-45deg);
     transform: translateY(3px) rotate(-45deg);
 }
@@ -192,7 +192,7 @@ header.menu-opened ul.nav-menu li.nav-menu__item {
     opacity: 1;
 }
 
-header.menu-opened .translate {
+header.menu-opened .burger__translate {
     -webkit-transform: translateX(150px);
     transform: translateX(150px);
 }
@@ -251,7 +251,7 @@ main section {
     margin: 1em 1em 1em 0;
 }
 
-.flipbox-gallery__flip {
+.flipbox-gallery__box__flip {
     position: relative;
     display: block;
     width: 100%;
@@ -265,13 +265,13 @@ main section {
     border-radius: 20px 5px;
 }
 
-.flipbox-gallery__box:hover .flipbox-gallery__flip {
+.flipbox-gallery__box:hover .flipbox-gallery__box__flip {
     transform: rotateY(+180deg);
     -webkit-transform: rotateY(+180deg);
 }
 
-.flipbox-gallery__front,
-.flipbox-gallery__back {
+.flipbox-gallery__box__flip__front,
+.flipbox-gallery__box__flip__back {
     position: absolute;
     top: 0;
     left: 0;
@@ -283,27 +283,27 @@ main section {
     color: rgb(255, 255, 255);
 }
 
-.flipbox-gallery__front img {
+.flipbox-gallery__box__flip__front img {
     border-radius: 20px 5px 0 0;
     width: 100%;
     height: 100%;
 }
 
-.flipbox-gallery__back {
+.flipbox-gallery__box__flip__back {
     transform: rotateY(-180deg);
     -webkit-transform: rotateY(-180deg);
     background-color: rgb(0, 0, 0);
     border-radius: 5px 20px;
 }
 
-.flipbox-gallery__back h3 {
+.flipbox-gallery__box__flip__back h3 {
     color: rgb(255, 255, 255);
     padding: 10px 5px 5px 5px;
     border-bottom: 1px solid rgb(255, 255, 255);
     margin: 0;
 }
 
-.flipbox-gallery__back p {
+.flipbox-gallery__box__flip__back p {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 0.5em 0.8em;
@@ -327,20 +327,20 @@ main section {
     display: none;
 }
 
-.products img {
+.slide img {
     width: 320px;
     transform: rotateZ(90deg);
     -webkit-transform: rotateZ(90deg);
 }
 
-.products a {
+.slide a {
     display: block;
     max-width: 375px;
     text-align: center;
     margin: 0 auto
 }
 
-.products a span {
+.slide a span {
     color: rgb(0, 0, 0);
     padding-top: 10px;
     border-top: 1px solid rgb(0, 0, 0);
@@ -371,8 +371,7 @@ main section {
     width: 100%;
 }
 
-.slide-container .slide-container--button__prev,
-.slide-container .slide-container--button__next {
+.slide-container .slide-container__button {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -385,25 +384,25 @@ main section {
     -webkit-user-select: none;
 }
 
-.slide-container .slide-container--button__prev {
+.slide-container .slide-container__button--prev {
     border-radius: 15px 5px 5px 15px;
 }
 
-.slide-container .slide-container--button__next {
+.slide-container .slide-container__button--next {
     border-radius: 5px 15px 15px 5px;
 }
 
-.slide-container .slide-container--button__prev:hover,
-.slide-container .slide-container--button__next:hover {
+.slide-container .slide-container__button--prev:hover,
+.slide-container .slide-container__button--next:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
-.slide-container .slide-container--button__prev {
+.slide-container .slide-container__button--prev {
     left: 2px;
 }
 
-.slide-container .slide-container--button__next {
+.slide-container .slide-container__button--next {
     right: 2px;
 }
 
@@ -446,7 +445,7 @@ main section {
 }
 
 .sponzors-gallery h2,
-.products h2 {
+.slide h2 {
     margin: 15px 0;
 }
 
@@ -612,26 +611,13 @@ footer p {
         align-self: center;
     }
 
-    header .icon {
-        position: initial;
-        transform: none;
-        -webkit-transform: none;
-        height: 45px;
-        opacity: 0.8;
-    }
-
-    header a.icon.brand {
-        font-size: 34px;
-        margin-top: -4px;
-    }
-
     header ul.nav-menu li.nav-menu__item a {
         font-size: 14px;
     }
 
     header ul.nav-menu li.nav-menu__item a,
-    header a.icon.brand,
-    header .translate__lang a {
+    header a.burger__brand,
+    header .burger__translate__lang a {
         -webkit-transition: opacity 0.3s ease;
         transition: opacity 0.3s ease;
         margin: auto 0;
@@ -640,20 +626,28 @@ footer p {
     }
 
     header ul.nav-menu li.nav-menu__item a:hover,
-    header a.icon.brand:hover,
-    header .translate__lang a:hover {
+    header a.burger__brand:hover,
+    header .burger__translate__lang a:hover {
         opacity: 1;
         -webkit-transition: opacity 0.3s ease;
         transition: opacity 0.3s ease;
     }
 
-    header .translate__lang {
+    header .burger__translate__lang {
         margin-top: -3.5px;
     }
 
-    header .translate__lang a {
+    header .burger__translate__lang a {
         font-size: 12px;
         margin: 0 0.2em;
+    }
+
+    header .icon {
+        position: initial;
+        transform: none;
+        -webkit-transform: none;
+        height: 45px;
+        opacity: 0.8;
     }
 
     .podheader {
@@ -725,7 +719,7 @@ footer p {
         margin: 0 calc((((100vw - 8px) - 800px)/2)/4);
     }
 
-    header .translate__lang a {
+    header .burger__translate__lang a {
         font-size: 13px;
     }
 

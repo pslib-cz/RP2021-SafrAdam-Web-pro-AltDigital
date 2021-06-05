@@ -35,13 +35,13 @@
 <body>
     <header class="burger">
         <div class="burger__container">
-            <div class="burger__button">
-                <div class="burger--bar burger--bar__top"></div>
-                <div class="burger--bar burger--bar__bottom"></div>
+            <div class="burger__container__button">
+                <div class="burger__bar burger__bar--top"></div>
+                <div class="burger__bar burger__bar--bottom"></div>
             </div>
         </div>
 
-        <a href="#" class="brand icon">&#8706;</a>
+        <a href="#" class="burger__brand icon">&#8706;</a>
         <ul class="nav-menu">
             <li class="nav-menu__item"><a href="#About">O nás</a></li>
             <li class="nav-menu__item"><a href="#Services">Služby</a></li>
@@ -49,8 +49,8 @@
             <li class="nav-menu__item"><a href="#Contacts">Kontakty</a></li>
             <li class="nav-menu__item"><a href="kariera.html">Kariéra</a></li>
         </ul>
-        <div class="translate icon">
-            <div class="translate__lang"><a>CZ</a>/<a href="en.html">EN</a></div>
+        <div class="burger__translate icon">
+            <div class="burger__translate__lang"><a>CZ</a>/<a href="en.html">EN</a></div>
         </div>
     </header>
 
@@ -77,18 +77,18 @@
                 historii zakládajících členů rádi přijímáme výzvy na hranici technické realizovatelnosti.</p>
         </section>
 
-        <section class="services" id="Services">
+        <section class="flipbox" id="Services">
             <h2>Služby</h2>
 
             <div class="flipbox-gallery">
                 <div class="flipbox-gallery__box">
-                    <div class="flipbox-gallery__flip">
-                        <div class="flipbox-gallery__front">
+                    <div class="flipbox-gallery__box__flip">
+                        <div class="flipbox-gallery__box__flip__front">
                             <img src="./img/Services/software_design.jpg" alt="software design" width="230"
                                 height="170">
                             <span>Software design</span>
                         </div>
-                        <div class="flipbox-gallery__back">
+                        <div class="flipbox-gallery__box__flip__back">
                             <h3>Software design</h3>
                             <p>Vyvíjíme software pro elektronická zařízení a embeded systémy. Naše technologie
                                 zahrnuje
@@ -98,13 +98,13 @@
                 </div>
 
                 <div class="flipbox-gallery__box">
-                    <div class="flipbox-gallery__flip">
-                        <div class="flipbox-gallery__front">
+                    <div class="flipbox-gallery__box__flip">
+                        <div class="flipbox-gallery__box__flip__front">
                             <img src="./img/Services/hardware_design.jpg" alt="hardware design" width="230"
                                 height="170">
                             <span>Hardware design</span>
                         </div>
-                        <div class="flipbox-gallery__back">
+                        <div class="flipbox-gallery__box__flip__back">
                             <h3>Hardware design</h3>
                             <p>Provedeme schematický design a návrh desek plošných spojů, simulaci, analýzu, testování a
                                 uvedení do provozu.</p>
@@ -113,12 +113,12 @@
                 </div>
 
                 <div class="flipbox-gallery__box">
-                    <div class="flipbox-gallery__flip">
-                        <div class="flipbox-gallery__front">
+                    <div class="flipbox-gallery__box__flip">
+                        <div class="flipbox-gallery__box__flip__front">
                             <img src="./img/Services/pcb_manufacturing.jpg" alt="výroba desek" width="230" height="170">
                             <span>Výroba</span>
                         </div>
-                        <div class="flipbox-gallery__back">
+                        <div class="flipbox-gallery__box__flip__back">
                             <h3>Výroba</h3>
                             <p>Od společnosti JabloPCB se můžeme spolehnout na kvalitu a včasné dodání, od malých objemů
                                 až po výrobu ve velkém.</p>
@@ -128,7 +128,7 @@
             </div>
         </section>
 
-        <section class="products" id="Products">
+        <section class="slide" id="Products">
             <h2>Produkty</h2>
 
             <div class="slide-container">
@@ -169,8 +169,8 @@
                     </a>
                 </div>
 
-                <a class="slide-container--button__prev" title="Předchozí">&#10094;</a>
-                <a class="slide-container--button__next" title="Další">&#10095;</a>
+                <a class="slide-container__button slide-container__button--prev" title="Předchozí">&#10094;</a>
+                <a class="slide-container__button slide-container__button--next" title="Další">&#10095;</a>
             </div>
             <div class="dots-container">
                 <span class="dots-container__dot"></span>
@@ -181,7 +181,7 @@
 
         </section>
 
-        <section class="partners">
+        <section class="sponzors">
             <h2>Partneři</h2>
             <div class="sponzors-gallery">
                 <a href="https://www.atrea.cz/">
@@ -260,8 +260,8 @@
             init(currentSlide)
         }
 
-        document.querySelector(".slide-container--button__next").addEventListener('click', next)
-        document.querySelector(".slide-container--button__prev").addEventListener('click', prev)
+        document.querySelector(".slide-container__button--next").addEventListener('click', next)
+        document.querySelector(".slide-container__button--prev").addEventListener('click', prev)
 
         setInterval(() => {
             next()

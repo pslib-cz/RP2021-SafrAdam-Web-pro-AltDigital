@@ -46,8 +46,8 @@ a.click {
     font-weight: bolder !important;
 }
 
-header a.icon.brand {
-    font-size: 34px;
+header a.burger__brand.icon {
+    font-size: 30px;
     font-family: "Monaco";
     opacity: 0.8;
 }
