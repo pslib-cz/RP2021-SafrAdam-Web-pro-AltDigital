@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="burger">
+    <nav class="burger">
         <div class="burger__container">
             <div class="burger__container__button">
                 <div class="burger__container__button__bar burger__container__button__bar--top"></div>
@@ -28,7 +28,8 @@
             </div>
         </div>
 
-        <a href="#" class="burger__brand icon">&#8706;</a>
+        <a href="#" class="burger__brand icon"><span class="burger__brand__title">alt digital</span></a>
+
         <ul class="burger__nav-menu">
             <li class="burger__nav-menu__item"><a href="#About">About us</a></li>
             <li class="burger__nav-menu__item"><a href="#Services">Services</a></li>
@@ -39,19 +40,19 @@
         <div class="burger__translate icon">
             <div class="burger__translate__lang"><a href="index.html">CZ</a>/<a>EN</a></div>
         </div>
-    </header>
+    </nav>
 
-    <section class="podheader">
-        <div class="podheader__title">
+    <header>
+        <div class="header__title">
             <h1>
-                <img src="./img/Logotyp_White_P.svg">
+                <span>Alt digital</span>
             </h1>
         </div>
-    </section>
+    </header>
 
     <main>
-        <section id="About">
-            <h2>About us</h2>
+        <section class="section" id="About">
+            <h2 class="text-h2">About us</h2>
             <p> The alt digital company has been focusing on electronics development, programming and production of
                 printed circuit boards since 2018. We are a member of the Jablotron group. Jablotron
                 is one of the largest manufacturers of electronic systems in the Czech Republic, which exports its products
@@ -65,7 +66,7 @@
                 history of founding members, we are happy to accept challenges on the verge of technical feasibility.</p>
         </section>
 
-        <section class="flipbox" id="Services">
+        <section class="section" id="Services">
             <h2>Services</h2>
 
             <div class="flipbox-gallery">
@@ -116,7 +117,7 @@
             </div>
         </section>
 
-        <section class="slide" id="Products">
+        <section class="section" id="Products">
             <h2>Products</h2>
 
             <div class="slide-container">
@@ -169,7 +170,7 @@
 
         </section>
 
-        <section class="sponzors">
+        <section class="section">
             <h2>Partners</h2>
             <div class="sponzors-gallery">
                 <a href="https://www.atrea.cz/">
@@ -191,13 +192,15 @@
             </div>
         </section>
 
-        <section class="contacts" id="Contacts">
-            <h2>Contacts</h2>
-            <a href="mailto:info@altd.cz">info@altd.cz</a>
-            <a href="tel:+420776691343">+420 776 691 343</a>
-            <a>Smolný vrch 410/3</a>
-            <a>460 15, Liberec 15</a>
-            <a>IČ: 07190883 DIČ: CZ07190883</a>
+        <section class="section section--center" id="Contacts">
+            <h2>Kontakty</h2>
+            <div class="contacts">
+                <a href="mailto:info@altd.cz">info@altd.cz</a>
+                <a href="tel:+420776691343">+420 776 691 343</a>
+                <a>Smolný vrch 410/3</a>
+                <a>460 15, Liberec 15</a>
+                <a>IČ: 07190883 DIČ: CZ07190883</a>
+            </div>
         </section>
     </main>
 
@@ -208,16 +211,16 @@
 
     <script type="text/javascript">
         var burger = document.querySelector(".burger__container");
-        var header = document.querySelector("header");
+        var nav = document.querySelector("nav");
         var close = document.querySelector("body")
 
         burger.addEventListener("click", (event) => {
             event.stopPropagation();
-            header.classList.toggle("menu-opened");
+            nav.classList.toggle("menu-opened");
         });
 
         close.addEventListener("click", () => {
-            header.classList.remove("menu-opened");
+            nav.classList.remove("menu-opened");
         });
     </script>
 
