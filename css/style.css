@@ -220,10 +220,6 @@ header {
     margin-top: 48px;
 }
 
-.header__title img {
-    height: 320px;
-}
-
 header h1 span, header .text-h1 span {
     position: absolute;
     left: -10000px;
