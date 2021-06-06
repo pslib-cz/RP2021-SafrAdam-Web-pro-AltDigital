@@ -43,10 +43,10 @@
         </div>
     </nav>
 
-    <header style="margin-top:27px;">
-        <h2 class="text-h1">
-            <span>Alt digital</span>
-        </h2>
+    <header>
+        <div>
+            <h2 class="text-h1">Alt digital s.r.o. electronic design hous</h2>
+        </div>
     </header>
 
     <main>
@@ -126,17 +126,18 @@
 
     <script type="text/javascript">
         var burger = document.querySelector(".burger__container");
-        var header = document.querySelector("header");
+        var nav = document.querySelector("nav");
         var close = document.querySelector("body")
 
         burger.addEventListener("click", (event) => {
             event.stopPropagation();
-            header.classList.toggle("menu-opened");
+            nav.classList.toggle("menu-opened");
         });
 
         close.addEventListener("click", () => {
-            header.classList.remove("menu-opened");
+            nav.classList.remove("menu-opened");
         });
+
         window.addEventListener("resize", function() {
             if (window.innerWidth > 767) nav.classList.remove("menu-opened");
         });
