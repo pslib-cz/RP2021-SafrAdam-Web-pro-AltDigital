@@ -137,6 +137,9 @@
         close.addEventListener("click", () => {
             header.classList.remove("menu-opened");
         });
+        window.addEventListener("resize", function() {
+            if (window.innerWidth > 767) nav.classList.remove("menu-opened");
+        });
     </script>
 
 

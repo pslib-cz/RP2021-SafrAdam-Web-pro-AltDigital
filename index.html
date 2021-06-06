@@ -232,6 +232,10 @@
         close.addEventListener("click", () => {
             nav.classList.remove("menu-opened");
         });
+
+        window.addEventListener("resize", function() {
+            if (window.innerWidth > 767) nav.classList.remove("menu-opened");
+        });
     </script>
 
     <script type="text/javascript">
